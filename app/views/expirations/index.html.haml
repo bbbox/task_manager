@@ -1,0 +1,19 @@
+%h1 Listing expirations
+
+%table
+  %tr
+    %th Date
+    %th
+    %th
+    %th
+
+  - @expirations.each do |expiration|
+    %tr
+      %td= expiration.date
+      %td= link_to 'Show', expiration
+      %td= link_to 'Edit', edit_expiration_path(expiration)
+      %td= link_to 'Destroy', expiration, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Expiration', new_expiration_path

@@ -1,0 +1,66 @@
+%p#notice= notice
+
+%p
+  %b Number:
+  = @task.number
+%p
+  %b Description:
+  = @task.description
+%p
+  %b Comments:
+  = @task.comments
+%p
+  %b Issued department:
+  = @task.issued_department_id
+%p
+  %b Received department:
+  = @task.received_department_id
+%p
+  %b Facility:
+  = @task.facility_id
+%p
+  %b Detailed schedule number:
+  = @task.detailed_schedule_number
+%p
+  %b Code:
+  = @task.code
+%p
+  %b Stamp name:
+  = @task.stamp_name
+%p
+  %b Stage:
+  = @task.stage_id
+%p
+  %b Step number:
+  = @task.step_number
+%p
+  %b Contract number:
+  = @task.contract_number
+%p
+  %b Issued chief:
+  = @task.issued_chief_id
+%p
+  %b Received chief:
+  = @task.received_chief_id
+%p
+  %b Issued group head:
+  = @task.issued_group_head_id
+%p
+  %b Received group head:
+  = @task.received_group_head_id
+%p
+  %b Received staff:
+  = @task.received_staff_id
+%p
+  %b Chief project engineer:
+  = @task.chief_project_engineer_id
+%p
+  %b Issue date:
+  = @task.issue_date
+%p
+  %b Expiration:
+  = @task.expiration_id
+
+= link_to 'Edit', edit_task_path(@task)
+\|
+= link_to 'Back', tasks_path

@@ -1,0 +1,23 @@
+%h1 Listing plants
+
+%table
+  %tr
+    %th Name
+    %th Serial
+    %th Address
+    %th
+    %th
+    %th
+
+  - @plants.each do |plant|
+    %tr
+      %td= plant.name
+      %td= plant.serial
+      %td= plant.address
+      %td= link_to 'Show', plant
+      %td= link_to 'Edit', edit_plant_path(plant)
+      %td= link_to 'Destroy', plant, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Plant', new_plant_path

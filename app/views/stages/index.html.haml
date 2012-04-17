@@ -1,0 +1,19 @@
+%h1 Listing stages
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @stages.each do |stage|
+    %tr
+      %td= stage.name
+      %td= link_to 'Show', stage
+      %td= link_to 'Edit', edit_stage_path(stage)
+      %td= link_to 'Destroy', stage, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Stage', new_stage_path
