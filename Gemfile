@@ -4,6 +4,7 @@ gem 'rails', '3.2.1'
 
 gem 'therubyracer'
 gem 'haml-rails'
+gem 'devise'
 
 gem 'sqlite3'
 
@@ -18,6 +19,21 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'database_cleaner'
+  gem 'cucumber', '1.1.4'
+  gem 'cucumber-rails', '1.2.1'
+  gem 'capybara', '1.1.2'
+  gem 'email_spec'
 end
 
 gem 'jquery-rails'
