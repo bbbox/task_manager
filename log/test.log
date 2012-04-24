@@ -1,0 +1,1591 @@
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (180.1ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (108.6ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (148.8ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (123.8ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (206.6ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (125.1ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (32.1ms)[0m  INSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:17:50 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:17:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 17 Apr 2012 15:17:50 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:17:50 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (125.8ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (100.4ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.7ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (123.8ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (32.3ms)[0m  INSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:26:07 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:26:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 17 Apr 2012 15:26:07 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:26:07 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (164.9ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (223.1ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (199.5ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (248.7ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (223.2ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (256.1ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:27:11 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:27:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 17 Apr 2012 15:27:11 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:27:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (189.5ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (115.3ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (117.0ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (123.8ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (123.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (32.5ms)[0m  INSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:27:50 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:27:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 17 Apr 2012 15:27:51 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:27:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (173.7ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (461.4ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (184.8ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (244.9ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (189.9ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (99.1ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (108.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (32.5ms)[0m  INSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:29:24 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:29:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 17 Apr 2012 15:29:24 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:29:24 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "facilities" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (164.2ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (108.6ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (99.2ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:40:59 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 17 Apr 2012 15:40:59 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:40:59 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:40:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:40:59 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:40:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (158.1ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (123.6ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (31.4ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:42:40 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 17 Apr 2012 15:42:40 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:42:40 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:42:40 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:42:40 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:42:40 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (159.6ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (187.1ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (210.2ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (214.5ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (320.7ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (192.7ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (35.4ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:43:09 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 17 Apr 2012 15:43:09 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:43:09 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:43:09 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:43:09 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:43:09 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (154.3ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (125.2ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (231.0ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (44.3ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:44:29 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 17 Apr 2012 15:44:29 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:44:29 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:44:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:44:29 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:44:29 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (181.4ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (268.6ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (270.3ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (231.4ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (247.7ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (123.9ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (123.8ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (123.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:45:36 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 17 Apr 2012 15:45:36 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 17 Apr 2012 15:45:37 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 17 Apr 2012 15:45:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 17 Apr 2012 15:45:37 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 17 Apr 2012 15:45:37 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (154.1ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (100.6ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.7ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.0ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (125.3ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (115.3ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (98.6ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (123.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.4ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (21.7ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Wed, 18 Apr 2012 06:39:25 UTC +00:00], ["name", "Department name"], ["updated_at", Wed, 18 Apr 2012 06:39:25 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Wed, 18 Apr 2012 06:39:25 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Wed, 18 Apr 2012 06:39:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Apr 2012 06:39:25 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Wed, 18 Apr 2012 06:39:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (281.8ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (98.8ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (99.1ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (116.9ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (123.6ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Wed, 18 Apr 2012 06:48:44 UTC +00:00], ["name", "Department name"], ["updated_at", Wed, 18 Apr 2012 06:48:44 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Wed, 18 Apr 2012 06:48:44 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Wed, 18 Apr 2012 06:48:44 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Apr 2012 06:48:44 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Wed, 18 Apr 2012 06:48:44 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (164.7ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (98.8ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (99.0ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Wed, 18 Apr 2012 07:56:00 UTC +00:00], ["name", "Department name"], ["updated_at", Wed, 18 Apr 2012 07:56:00 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Wed, 18 Apr 2012 07:56:00 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Wed, 18 Apr 2012 07:56:00 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 18 Apr 2012 07:56:00 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Wed, 18 Apr 2012 07:56:00 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (208.6ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (115.3ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (116.8ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 12:34:06 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 12:34:06 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 12:34:06 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 12:34:06 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 12:34:06 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 12:34:06 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (154.4ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (98.8ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (123.6ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (123.6ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (103.6ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (90.8ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (98.8ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (100.4ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (90.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 12:43:44 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 12:43:44 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 12:43:44 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 12:43:44 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 12:43:44 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 12:43:44 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (150.1ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (99.0ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (90.7ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (99.0ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (90.7ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (206.7ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (208.1ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 12:45:02 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 12:45:02 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 12:45:02 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 12:45:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 12:45:02 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 12:45:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (144.4ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (115.3ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (90.8ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (82.4ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (108.5ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:10:56 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 13:10:56 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 13:10:56 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 13:10:56 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:10:56 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 13:10:56 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (163.8ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (123.7ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (123.6ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (141.7ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (223.0ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (173.6ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (33.1ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:26:06 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 13:26:06 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 13:26:06 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 13:26:06 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:26:06 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 13:26:06 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (143.7ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (100.4ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (115.6ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (132.1ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (33.0ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:36:56 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 13:36:56 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 13:36:57 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 13:36:57 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:36:57 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 13:36:57 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (146.1ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (131.9ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (190.1ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (191.7ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (215.1ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:38:39 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 13:38:39 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 13:38:39 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 13:38:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:38:39 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 13:38:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (152.3ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (100.3ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (107.3ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:41:31 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 13:41:31 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 13:41:31 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 13:41:31 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:41:31 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 13:41:31 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (213.4ms)[0m  [1mDELETE FROM "departments";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'departments';
+  [1m[36m (107.1ms)[0m  [1mDELETE FROM "expirations";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'expirations';
+  [1m[36m (98.9ms)[0m  [1mDELETE FROM "facilities";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'facilities';
+  [1m[36m (99.0ms)[0m  [1mDELETE FROM "plants";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'plants';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "roles";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles';
+  [1m[36m (107.2ms)[0m  [1mDELETE FROM "roles_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'roles_users';
+  [1m[36m (115.4ms)[0m  [1mDELETE FROM "stages";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'stages';
+  [1m[36m (116.9ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (115.3ms)[0m  [1mDELETE FROM "tasks_users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks_users';
+  [1m[36m (115.5ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (33.0ms)[0m  INSERT INTO "departments" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:42:50 UTC +00:00], ["name", "Department name"], ["updated_at", Tue, 24 Apr 2012 13:42:50 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "plants" ("address", "created_at", "name", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "dnepropetrovsk"], ["created_at", Tue, 24 Apr 2012 13:42:50 UTC +00:00], ["name", "Plant name"], ["serial", "aaa777"], ["updated_at", Tue, 24 Apr 2012 13:42:50 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "facilities" ("created_at", "name", "plant_id", "serial", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 24 Apr 2012 13:42:50 UTC +00:00], ["name", "Facility name"], ["plant_id", nil], ["serial", "bbb999"], ["updated_at", Tue, 24 Apr 2012 13:42:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "facilities" 
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
