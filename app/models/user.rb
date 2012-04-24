@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :login
 
   has_and_belongs_to_many :tasks
   belongs_to :department
@@ -13,6 +13,14 @@ class User < ActiveRecord::Base
  # has_many :tasks
 
   validates :login, presence: true
+
+  validates :login, uniqueness: true, length: { within: 4..36 }
+
+  def self.find_first_by_auth_conditions(warden_conditions)
+    conditions = warden_conditions.dup
+    login = conditions.delete(:login).downcase
+    where(conditions).where(["lower(login) = :value OR lower(email) = :value", { :value => login.downcase }]).first
+  end
 
 
 end
