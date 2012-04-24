@@ -7,6 +7,8 @@ gem 'haml-rails'
 gem 'devise'
 
 gem 'sqlite3'
+gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
+
 
 
 # Gems used only for assets and not required
