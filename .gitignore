@@ -9,5 +9,8 @@
 /tmp
 
 # Ignore other unneeded files.
-.idea/
+.rvmrc
+tmp
+*.gem
 Gemfile.lock
+.idea
