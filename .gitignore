@@ -6,6 +6,7 @@
 
 # Ignore bundler config
 /.bundle
+/.idea
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -14,6 +15,9 @@
 /log/*.log
 /tmp
 
-/.idea
-/.rvmrc
-/Gemfile.lock
+# Ignore other unnedded files.
+.rvmrc
+tmp
+*.gem
+Gemfile.lock
+.idea
