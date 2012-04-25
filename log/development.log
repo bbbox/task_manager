@@ -314,3 +314,1836 @@ Migrating to RemoveExpirationIdFromTask (20120424133549)
   [1m[36m (107.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120417143309')[0m
   [1m[35m (115.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120417143410')
   [1m[36m (99.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120417134023')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDepartments (20120417130616)
+Migrating to CreatePlants (20120417131017)
+Migrating to CreateFacilities (20120417131352)
+Migrating to CreateStages (20120417131659)
+Migrating to CreateExpirations (20120417131919)
+Migrating to CreateTasks (20120417134023)
+Migrating to DeviseCreateUsers (20120417140557)
+Migrating to CreateTableTasksUsers (20120417142919)
+Migrating to CreateRoles (20120417143309)
+Migrating to CreateTableRolesUsers (20120417143410)
+Migrating to AddTaskIdToExpiration (20120424133228)
+Migrating to RemoveExpirationIdFromTask (20120424133549)
+Migrating to DeviseCreateAdminUsers (20120425094722)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "admin_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (11.6ms)[0m  INSERT INTO "admin_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 25 Apr 2012 09:47:57 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "admin@example.com"], ["encrypted_password", "$2a$10$mF07ZI3nelf.syp2qj49tOYSAMHPnuskHGpuKdP5xny7mDhiFNIam"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Wed, 25 Apr 2012 09:47:57 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_users_on_email')
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120425094722')
+  [1m[36m (147.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAdminNotes (20120425124727)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "admin_notes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "admin_user_id" integer, "admin_user_type" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("admin_notes")
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "admin_notes" ("resource_type", "resource_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("admin_notes")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "index_admin_notes_on_admin_user_type_and_admin_user_id" ON "admin_notes" ("admin_user_type", "admin_user_id")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120425124727')[0m
+  [1m[35m (92.6ms)[0m  commit transaction
+Migrating to MoveAdminNotesToComments (20120425124728)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("admin_notes")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_admin_user_type_and_admin_user_id')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.4ms)[0m  [1mDROP INDEX "index_admin_notes_on_admin_user_type_and_admin_user_id"[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "admin_notes" RENAME TO "active_admin_comments"
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "altered_active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "admin_user_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("altered_active_admin_comments")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "temp_index_admin_notes_on_resource_type_and_resource_id" ON "altered_active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "active_admin_comments"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "active_admin_comments"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "admin_user_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("altered_active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('temp_index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_active_admin_comments"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "altered_active_admin_comments"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "altered_active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("altered_active_admin_comments")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "temp_index_admin_notes_on_resource_type_and_resource_id" ON "altered_active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "active_admin_comments"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "active_admin_comments"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('temp_index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_active_admin_comments"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "altered_active_admin_comments"
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "active_admin_comments" ADD "namespace" varchar(255)[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_active_admin_comments_on_namespace')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")
+  [1m[36m (0.1ms)[0m  [1mUPDATE active_admin_comments SET namespace='admin'[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120425124728')
+  [1m[36m (92.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_active_admin_comments_on_namespace')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_users_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("departments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("expirations")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("facilities")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("plants")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("roles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("roles_users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_roles_users_on_role_id_and_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("stages")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("tasks")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("tasks_users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_tasks_users_on_task_id_and_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-25 12:48:17 +0300
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:48:17 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (122.0ms)
+Completed 500 Internal Server Error in 209ms
+
+ActionView::Template::Error (undefined method `login' for #<AdminUser:0x000000037552f8>):
+    4:   <% scope = Devise::Mapping.find_scope!(resource_name) %>
+    5:   <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+    6:     f.inputs do
+    7:       Devise.authentication_keys.each { |key| f.input key, :input_html => {:autofocus => true}}
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+  activemodel (3.2.1) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.1) lib/active_record/attribute_methods.rb:126:in `method_missing'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1154:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1142:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `block in to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `fetch'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:690:in `text_field'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1277:in `text_field'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:10:in `block in to_html'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:8:in `to_html'
+  formtastic (2.2.0) lib/formtastic/helpers/input_helper.rb:240:in `input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `block in input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `input'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (3 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__2825998566989152075_15397180'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `each'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (2 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__2825998566989152075_15397180'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/helpers/fieldset_wrapper.rb:32:in `field_set_and_list_wrapping'
+  formtastic (2.2.0) lib/formtastic/helpers/inputs_helper.rb:292:in `inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `block in inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `inputs'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:6:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__2825998566989152075_15397180'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__2825998566989152075_15397180'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__2731372465215400411__process_action__788199972448518407__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__2367828967978677391__call__3317564089822799493__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:51:37 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (7.4ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `login' for #<AdminUser:0x00000002d43558>):
+    4:   <% scope = Devise::Mapping.find_scope!(resource_name) %>
+    5:   <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+    6:     f.inputs do
+    7:       Devise.authentication_keys.each { |key| f.input key, :input_html => {:autofocus => true}}
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+  activemodel (3.2.1) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.1) lib/active_record/attribute_methods.rb:126:in `method_missing'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1154:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1142:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `block in to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `fetch'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:690:in `text_field'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1277:in `text_field'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:10:in `block in to_html'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:8:in `to_html'
+  formtastic (2.2.0) lib/formtastic/helpers/input_helper.rb:240:in `input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `block in input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `input'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (3 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__2825998566989152075_15397180'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `each'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (2 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__2825998566989152075_15397180'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/helpers/fieldset_wrapper.rb:32:in `field_set_and_list_wrapping'
+  formtastic (2.2.0) lib/formtastic/helpers/inputs_helper.rb:292:in `inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `block in inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `inputs'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:6:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__2825998566989152075_15397180'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__2825998566989152075_15397180'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__2731372465215400411__process_action__788199972448518407__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__2367828967978677391__call__3317564089822799493__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:51:55 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (121.3ms)
+Completed 500 Internal Server Error in 195ms
+
+ActionView::Template::Error (undefined method `login' for #<AdminUser:0x00000003597f60>):
+    4:   <% scope = Devise::Mapping.find_scope!(resource_name) %>
+    5:   <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+    6:     f.inputs do
+    7:       Devise.authentication_keys.each { |key| f.input key, :input_html => {:autofocus => true}}
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+  activemodel (3.2.1) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.1) lib/active_record/attribute_methods.rb:126:in `method_missing'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1154:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1142:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `block in to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `fetch'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:690:in `text_field'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1277:in `text_field'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:10:in `block in to_html'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:8:in `to_html'
+  formtastic (2.2.0) lib/formtastic/helpers/input_helper.rb:240:in `input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `block in input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `input'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (3 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__4449759443789214154_24600180'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `each'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (2 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__4449759443789214154_24600180'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/helpers/fieldset_wrapper.rb:32:in `field_set_and_list_wrapping'
+  formtastic (2.2.0) lib/formtastic/helpers/inputs_helper.rb:292:in `inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `block in inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `inputs'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:6:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__4449759443789214154_24600180'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__4449759443789214154_24600180'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__531907459890635262__process_action__641703799349590281__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__2438906192564550633__call__2962105810786254303__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:53:13 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (121.4ms)
+Completed 500 Internal Server Error in 196ms
+
+ActionView::Template::Error (undefined method `login' for #<AdminUser:0x000000036cf1a8>):
+    4:   <% scope = Devise::Mapping.find_scope!(resource_name) %>
+    5:   <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+    6:     f.inputs do
+    7:       Devise.authentication_keys.each { |key| f.input key, :input_html => {:autofocus => true}}
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+  activemodel (3.2.1) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.1) lib/active_record/attribute_methods.rb:126:in `method_missing'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1154:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1142:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `block in to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `fetch'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:690:in `text_field'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1277:in `text_field'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:10:in `block in to_html'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:8:in `to_html'
+  formtastic (2.2.0) lib/formtastic/helpers/input_helper.rb:240:in `input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `block in input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `input'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (3 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `each'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (2 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/helpers/fieldset_wrapper.rb:32:in `field_set_and_list_wrapping'
+  formtastic (2.2.0) lib/formtastic/helpers/inputs_helper.rb:292:in `inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `block in inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `inputs'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:6:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__1471927747999022910__process_action__606284556589567318__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1567313133580723688__call__2730555914189563762__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:53:15 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (6.7ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `login' for #<AdminUser:0x000000037bad38>):
+    4:   <% scope = Devise::Mapping.find_scope!(resource_name) %>
+    5:   <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+    6:     f.inputs do
+    7:       Devise.authentication_keys.each { |key| f.input key, :input_html => {:autofocus => true}}
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+  activemodel (3.2.1) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.1) lib/active_record/attribute_methods.rb:126:in `method_missing'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1154:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1142:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `block in to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `fetch'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:690:in `text_field'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1277:in `text_field'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:10:in `block in to_html'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:8:in `to_html'
+  formtastic (2.2.0) lib/formtastic/helpers/input_helper.rb:240:in `input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `block in input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `input'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (3 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `each'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (2 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/helpers/fieldset_wrapper.rb:32:in `field_set_and_list_wrapping'
+  formtastic (2.2.0) lib/formtastic/helpers/inputs_helper.rb:292:in `inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `block in inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `inputs'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:6:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__1471927747999022910__process_action__606284556589567318__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1567313133580723688__call__2730555914189563762__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:53:15 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (7.2ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `login' for #<AdminUser:0x00000003c195c8>):
+    4:   <% scope = Devise::Mapping.find_scope!(resource_name) %>
+    5:   <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+    6:     f.inputs do
+    7:       Devise.authentication_keys.each { |key| f.input key, :input_html => {:autofocus => true}}
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+  activemodel (3.2.1) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.1) lib/active_record/attribute_methods.rb:126:in `method_missing'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1154:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1142:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `block in to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `fetch'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:690:in `text_field'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1277:in `text_field'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:10:in `block in to_html'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:8:in `to_html'
+  formtastic (2.2.0) lib/formtastic/helpers/input_helper.rb:240:in `input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `block in input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `input'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (3 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `each'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (2 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/helpers/fieldset_wrapper.rb:32:in `field_set_and_list_wrapping'
+  formtastic (2.2.0) lib/formtastic/helpers/inputs_helper.rb:292:in `inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `block in inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `inputs'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:6:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__1471927747999022910__process_action__606284556589567318__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1567313133580723688__call__2730555914189563762__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:53:16 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (32.5ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined method `login' for #<AdminUser:0x007fc73888bb78>):
+    4:   <% scope = Devise::Mapping.find_scope!(resource_name) %>
+    5:   <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+    6:     f.inputs do
+    7:       Devise.authentication_keys.each { |key| f.input key, :input_html => {:autofocus => true}}
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+  activemodel (3.2.1) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.1) lib/active_record/attribute_methods.rb:126:in `method_missing'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1154:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1142:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `block in to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `fetch'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:690:in `text_field'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1277:in `text_field'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:10:in `block in to_html'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:8:in `to_html'
+  formtastic (2.2.0) lib/formtastic/helpers/input_helper.rb:240:in `input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `block in input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `input'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (3 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `each'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (2 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/helpers/fieldset_wrapper.rb:32:in `field_set_and_list_wrapping'
+  formtastic (2.2.0) lib/formtastic/helpers/inputs_helper.rb:292:in `inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `block in inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `inputs'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:6:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__1471927747999022910__process_action__606284556589567318__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1567313133580723688__call__2730555914189563762__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:53:18 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (6.7ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `login' for #<AdminUser:0x000000036eee18>):
+    4:   <% scope = Devise::Mapping.find_scope!(resource_name) %>
+    5:   <%= active_admin_form_for(resource, :as => resource_name, :url => send(:"#{scope}_session_path"), :html => { :id => "session_new" }) do |f| 
+    6:     f.inputs do
+    7:       Devise.authentication_keys.each { |key| f.input key, :input_html => {:autofocus => true}}
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+  activemodel (3.2.1) lib/active_model/attribute_methods.rb:407:in `method_missing'
+  activerecord (3.2.1) lib/active_record/attribute_methods.rb:126:in `method_missing'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1154:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1142:in `value_before_type_cast'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `block in to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `fetch'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1036:in `to_input_field_tag'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:690:in `text_field'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:1277:in `text_field'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:10:in `block in to_html'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+  formtastic (2.2.0) lib/formtastic/inputs/base/stringish.rb:8:in `to_html'
+  formtastic (2.2.0) lib/formtastic/helpers/input_helper.rb:240:in `input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `block in input'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:22:in `input'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (3 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `each'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:7:in `block (2 levels) in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  formtastic (2.2.0) lib/formtastic/helpers/fieldset_wrapper.rb:32:in `field_set_and_list_wrapping'
+  formtastic (2.2.0) lib/formtastic/helpers/inputs_helper.rb:292:in `inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `block in inputs'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:14:in `inputs'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:6:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3187293633400052882_23569780'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__1471927747999022910__process_action__606284556589567318__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1567313133580723688__call__2730555914189563762__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:54:30 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (1838.5ms)
+Completed 500 Internal Server Error in 1912ms
+
+ActionView::Template::Error (super: no superclass method `buttons' for #<ActiveAdmin::FormBuilder:0x000000035127e8>):
+    8:       f.input :password
+    9:       f.input :remember_me, :as => :boolean, :if =>  false  #devise_mapping.rememberable? }
+    10:     end
+    11:     f.buttons do
+    12:       f.commit_button "Login"
+    13:     end
+    14:   end
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:30:in `block in buttons'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:118:in `with_new_form_buffer'
+  activeadmin (0.4.3) lib/active_admin/form_builder.rb:29:in `buttons'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:11:in `block in __home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3019194008086400584_26595260'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:109:in `with_output_buffer_with_haml_xss'
+  actionpack (3.2.1) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:105:in `capture_with_haml'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:606:in `fields_for'
+  actionpack (3.2.1) lib/action_view/helpers/form_helper.rb:377:in `form_for'
+  haml (3.1.4) lib/haml/helpers/action_view_mods.rb:183:in `form_for_with_haml'
+  haml (3.1.4) lib/haml/helpers/xss_mods.rb:132:in `form_for_with_haml_xss'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:161:in `block in semantic_form_for'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:192:in `with_custom_field_error_proc'
+  formtastic (2.2.0) lib/formtastic/helpers/form_helper.rb:160:in `semantic_form_for'
+  activeadmin (0.4.3) lib/active_admin/view_helpers/form_helper.rb:8:in `active_admin_form_for'
+  activeadmin (0.4.3) app/views/active_admin/devise/sessions/new.html.erb:5:in `__home_ty__rvm_gems_ruby_______p__task_manager_gemset_gems_activeadmin_______app_views_active_admin_devise_sessions_new_html_erb__3019194008086400584_26595260'
+  actionpack (3.2.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (3.2.1) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.1) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/template_renderer.rb:12:in `render'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.1) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:109:in `_render_template'
+  actionpack (3.2.1) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.1) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.1) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:229:in `default_render'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:160:in `to_html'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.1) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.1) lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+  devise (2.0.4) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:436:in `_run__475157200112258948__process_action__4608737699813700526__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__2038386596542180796__call__789710698862138196__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-04-25 12:57:55 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/shared/_links.erb (1.6ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (183.6ms)
+Compiled active_admin.css  (1638ms)  (pid 5140)
+Compiled jquery.js  (2ms)  (pid 5140)
+Compiled jquery-ui.js  (2ms)  (pid 5140)
+Compiled jquery_ujs.js  (0ms)  (pid 5140)
+Compiled active_admin/application.js  (0ms)  (pid 5140)
+Compiled active_admin/base.js  (131ms)  (pid 5140)
+Compiled active_admin.js  (140ms)  (pid 5140)
+Completed 200 OK in 2097ms (Views: 2057.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 12:57:57 +0300
+Served asset /active_admin.css - 200 OK (48ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 12:57:57 +0300
+Served asset /jquery-ui.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 12:57:57 +0300
+Served asset /jquery.js - 200 OK (31ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 12:57:57 +0300
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 12:57:57 +0300
+Served asset /active_admin/application.js - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 12:57:57 +0300
+Served asset /active_admin/base.js - 200 OK (9ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 12:57:57 +0300
+Served asset /active_admin.js - 200 OK (10ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-04-25 12:58:21 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gae6woIOA5fy23miErwRvvnDMHsaeOBrw/uXM8wI2dA=", "admin_user"=>{"login"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE (lower(login) = 'admin@example.com' OR lower(email) = 'admin@example.com') LIMIT 1[0m
+SQLite3::SQLException: no such column: login: SELECT  "admin_users".* FROM "admin_users"  WHERE (lower(login) = 'admin@example.com' OR lower(email) = 'admin@example.com') LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: login: SELECT  "admin_users".* FROM "admin_users"  WHERE (lower(login) = 'admin@example.com' OR lower(email) = 'admin@example.com') LIMIT 1):
+  app/models/admin_user.rb:14:in `find_first_by_auth_conditions'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDepartments (20120417130616)
+Migrating to CreatePlants (20120417131017)
+Migrating to CreateFacilities (20120417131352)
+Migrating to CreateStages (20120417131659)
+Migrating to CreateExpirations (20120417131919)
+Migrating to CreateTasks (20120417134023)
+Migrating to DeviseCreateUsers (20120417140557)
+Migrating to CreateTableTasksUsers (20120417142919)
+Migrating to CreateRoles (20120417143309)
+Migrating to CreateTableRolesUsers (20120417143410)
+Migrating to AddTaskIdToExpiration (20120424133228)
+Migrating to RemoveExpirationIdFromTask (20120424133549)
+Migrating to DeviseCreateAdminUsers (20120425094722)
+Migrating to CreateAdminNotes (20120425124727)
+Migrating to MoveAdminNotesToComments (20120425124728)
+Migrating to AddLoginToAdminUser (20120425124729)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "admin_users" ADD "login" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120425124729')[0m
+  [1m[35m (185.9ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_namespace')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_admin_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_admin_users_on_email')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("departments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("expirations")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("facilities")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("plants")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("roles")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("roles_users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_roles_users_on_role_id_and_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("stages")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("tasks")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("tasks_users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_tasks_users_on_task_id_and_user_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-04-25 13:00:54 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gae6woIOA5fy23miErwRvvnDMHsaeOBrw/uXM8wI2dA=", "admin_user"=>{"login"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE (lower(login) = 'admin@example.com' OR lower(email) = 'admin@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "admin_users" SET "last_sign_in_at" = '2012-04-25 10:00:55.002368', "current_sign_in_at" = '2012-04-25 10:00:55.002368', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2012-04-25 10:00:55.003499' WHERE "admin_users"."id" = 1[0m
+  [1m[35m (166.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 396ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-25 13:00:55 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/dashboard/index.html.arb (61.2ms)
+Completed 200 OK in 104ms (Views: 67.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 13:00:55 +0300
+Served asset /active_admin.css - 304 Not Modified (55ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 13:00:55 +0300
+Served asset /active_admin.js - 200 OK (15ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-25 13:01:02 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/dashboard/index.html.arb (34.2ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 13:01:02 +0300
+Served asset /active_admin.css - 304 Not Modified (7ms)
