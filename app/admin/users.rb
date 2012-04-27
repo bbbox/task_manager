@@ -1,4 +1,5 @@
 ActiveAdmin.register User do
+  menu :label => I18n.t('active_admin.users')
   form do |f|
     f.inputs "Login" do
       f.input :login

@@ -6326,3 +6326,3838 @@ Served asset /bootstrap.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:48:00 +0300
 Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.6ms)
+  Rendered devise/sessions/new.html.haml (6.8ms)
+  Rendered pages/home.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /application.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /active_admin/base.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:50:53 +0300
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.7ms)
+  Rendered devise/sessions/new.html.haml (6.7ms)
+  Rendered pages/home.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 83ms (Views: 63.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /active_admin.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /stages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /bootstrap.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /active_admin/base.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:21 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:22 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:22 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:22 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:22 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:22 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:22 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:22 +0300
+Served asset /bootstrap.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:53:22 +0300
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:56:20 +0300
+Processing by PagesController#home as HTML
+ERROR: compiling _app_views_devise_sessions_new_html_haml__2464309345944734007_28682400 RAISED /home/ty/RubyWork/rails_projects/task_manager/app/views/devise/sessions/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_devise_sessions_new_html_haml__2464309345944734007_28682400(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/sessions/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h2>Sign in</h2>\n", 0, false);
+haml_temp =  form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: 'well'}) do |f|
+_hamlout.push_text("<div>\n  #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :login
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :login
+));}\n</div>\n<div>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :password
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.password_field :password
+));}\n</div>\n", -1, false); if devise_mapping.rememberable?
+_hamlout.push_text("<div>\n  #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( f.check_box :remember_me
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.label :remember_me
+));}\n</div>\n", -1, false);end
+_hamlout.push_text("<div>\n  ", 1, false);haml_temp =  f.submit
+_hamlout.push_text("  #{_hamlout.format_script_false_false_false_true_false_true_false((t :sign_in
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n</div>\n", -1, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n#{_hamlout.format_script_false_false_false_true_false_true_false(( render "devise/links"
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:285:in `module_eval'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:285:in `compile'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:233:in `compile!'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:142:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:125:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:141:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/helpers/rendering_helper.rb:24:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers.rb:90:in `non_haml'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+/home/ty/RubyWork/rails_projects/task_manager/app/views/pages/home.html.haml:4:in `_app_views_pages_home_html_haml___4207597168209514677_23678920'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:143:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:125:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:141:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:109:in `_render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:88:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/base.rb:167:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:414:in `_run__3941104312330956737__process_action__3537285340912376266__callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/base.rb:121:in `process'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:45:in `process'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal.rb:203:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal.rb:246:in `block in action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:66:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:30:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:589:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/sass-3.1.16/lib/sass/plugin/rack.rb:54:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/query_cache.rb:64:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `_run__3658722783951277473__call__4556657233449920336__callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/logger.rb:26:in `call_app'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/logger.rb:16:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/engine.rb:479:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/application.rb:220:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered devise/sessions/new.html.haml (2.8ms)
+  Rendered pages/home.html.haml within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/home/ty/RubyWork/rails_projects/task_manager/app/views/devise/sessions/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting $end):
+0  app/views/pages/home.html.haml:4:in `_app_views_pages_home_html_haml___4207597168209514677_23678920'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:56:49 +0300
+Processing by PagesController#home as HTML
+ERROR: compiling _app_views_devise_sessions_new_html_haml__2464309345944734007_29908260 RAISED /home/ty/RubyWork/rails_projects/task_manager/app/views/devise/sessions/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_devise_sessions_new_html_haml__2464309345944734007_29908260(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/sessions/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h2>Sign in</h2>\n", 0, false);
+haml_temp =  form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: 'well'}) do |f|
+_hamlout.push_text("<div>\n  #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :login
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :login
+));}\n</div>\n<div>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :password
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.password_field :password
+));}\n</div>\n", -1, false); if devise_mapping.rememberable?
+_hamlout.push_text("<div>\n  #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( f.check_box :remember_me
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.label :remember_me
+));}\n</div>\n", -1, false);end
+_hamlout.push_text("<div>\n  ", 1, false);haml_temp =  f.submit
+_hamlout.push_text("  #{_hamlout.format_script_false_false_false_true_false_true_false(( "ds"
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n</div>\n", -1, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n#{_hamlout.format_script_false_false_false_true_false_true_false(( render "devise/links"
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:285:in `module_eval'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:285:in `compile'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:233:in `compile!'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:142:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:125:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:141:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/helpers/rendering_helper.rb:24:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers.rb:90:in `non_haml'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+/home/ty/RubyWork/rails_projects/task_manager/app/views/pages/home.html.haml:4:in `_app_views_pages_home_html_haml___4207597168209514677_23678920'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:143:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:125:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:141:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:109:in `_render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:88:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/base.rb:167:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:414:in `_run__3941104312330956737__process_action__3537285340912376266__callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/base.rb:121:in `process'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:45:in `process'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal.rb:203:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal.rb:246:in `block in action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:66:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:30:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:589:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/sass-3.1.16/lib/sass/plugin/rack.rb:54:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/query_cache.rb:64:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `_run__3658722783951277473__call__4556657233449920336__callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/logger.rb:26:in `call_app'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/logger.rb:16:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/engine.rb:479:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/application.rb:220:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered devise/sessions/new.html.haml (3.7ms)
+  Rendered pages/home.html.haml within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (/home/ty/RubyWork/rails_projects/task_manager/app/views/devise/sessions/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting $end):
+0  app/views/pages/home.html.haml:4:in `_app_views_pages_home_html_haml___4207597168209514677_23678920'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:56:50 +0300
+Processing by PagesController#home as HTML
+ERROR: compiling _app_views_devise_sessions_new_html_haml__2464309345944734007_29908260 RAISED /home/ty/RubyWork/rails_projects/task_manager/app/views/devise/sessions/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_devise_sessions_new_html_haml__2464309345944734007_29908260(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/sessions/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h2>Sign in</h2>\n", 0, false);
+haml_temp =  form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: 'well'}) do |f|
+_hamlout.push_text("<div>\n  #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :login
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :login
+));}\n</div>\n<div>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :password
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.password_field :password
+));}\n</div>\n", -1, false); if devise_mapping.rememberable?
+_hamlout.push_text("<div>\n  #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( f.check_box :remember_me
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.label :remember_me
+));}\n</div>\n", -1, false);end
+_hamlout.push_text("<div>\n  ", 1, false);haml_temp =  f.submit
+_hamlout.push_text("  #{_hamlout.format_script_false_false_false_true_false_true_false(( "ds"
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n</div>\n", -1, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n#{_hamlout.format_script_false_false_false_true_false_true_false(( render "devise/links"
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:285:in `module_eval'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:285:in `compile'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:233:in `compile!'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:142:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:125:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:141:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/helpers/rendering_helper.rb:24:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers.rb:90:in `non_haml'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+/home/ty/RubyWork/rails_projects/task_manager/app/views/pages/home.html.haml:4:in `_app_views_pages_home_html_haml___4207597168209514677_23678920'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:143:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:125:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/template.rb:141:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:109:in `_render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:88:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/base.rb:167:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:414:in `_run__3941104312330956737__process_action__3537285340912376266__callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/base.rb:121:in `process'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:45:in `process'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal.rb:203:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_controller/metal.rb:246:in `block in action'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:66:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:30:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:589:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/sass-3.1.16/lib/sass/plugin/rack.rb:54:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/query_cache.rb:64:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `_run__3658722783951277473__call__4556657233449920336__callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/logger.rb:26:in `call_app'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/logger.rb:16:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activesupport-3.2.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/engine.rb:479:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/application.rb:220:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/railties-3.2.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered devise/sessions/new.html.haml (2.7ms)
+  Rendered pages/home.html.haml within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/home/ty/RubyWork/rails_projects/task_manager/app/views/devise/sessions/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting $end):
+0  app/views/pages/home.html.haml:4:in `_app_views_pages_home_html_haml___4207597168209514677_23678920'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:57:08 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (1.1ms)
+  Rendered devise/sessions/new.html.haml (8.1ms)
+  Rendered pages/home.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:08 +0300
+Served asset /application.css - 304 Not Modified (66ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /tasks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap.css - 304 Not Modified (49ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:09 +0300
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.7ms)
+  Rendered devise/sessions/new.html.haml (4.4ms)
+  Rendered pages/home.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 82ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /active_admin.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /bootstrap.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:42 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /active_admin/base.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:57:43 +0300
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.9ms)
+  Rendered devise/sessions/new.html.haml (33.1ms)
+  Rendered pages/home.html.haml within layouts/application (34.0ms)
+Completed 200 OK in 83ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /active_admin.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /expirations.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:15 +0300
+Served asset /tasks.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /active_admin/base.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:58:16 +0300
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.7ms)
+  Rendered devise/sessions/new.html.haml (6.6ms)
+  Rendered pages/home.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 83ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /application.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /active_admin.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /tasks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /bootstrap.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /active_admin/base.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /pages.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:43 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:44 +0300
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.6ms)
+  Rendered devise/sessions/new.html.haml (6.7ms)
+  Rendered pages/home.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /tasks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 14:59:58 +0300
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.7ms)
+  Rendered devise/sessions/new.html.haml (7.7ms)
+  Rendered pages/home.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /active_admin.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:00:29 +0300
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 15:01:19 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.7ms)
+  Rendered devise/sessions/new.html.haml (7.2ms)
+  Rendered pages/home.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 112ms (Views: 64.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /active_admin.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /tasks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /active_admin.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:01:20 +0300
+Served asset /application.js - 304 Not Modified (35ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.7ms)
+  Rendered devise/sessions/new.html.haml (4.4ms)
+  Rendered pages/home.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 82ms (Views: 63.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /active_admin.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /bootstrap.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /active_admin/application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /plants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:21 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:22 +0300
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (1.0ms)
+  Rendered devise/sessions/new.html.haml (10.0ms)
+  Rendered pages/home.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /application.css - 200 OK (46ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /expirations.css - 200 OK (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /active_admin.css - 200 OK (10ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /departments.css - 200 OK (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /facilities.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /page.css - 200 OK (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /plants.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /stages.css - 200 OK (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /tasks.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap.css - 200 OK (6ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /jquery-ui.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /active_admin/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /active_admin/base.js - 200 OK (3ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /departments.js - 200 OK (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /active_admin.js - 200 OK (2ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /expirations.js - 200 OK (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /facilities.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /plants.js - 200 OK (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /stages.js - 200 OK (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /tasks.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /bootstrap.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:02:42 +0300
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 15:03:40 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/_links.haml (0.7ms)
+  Rendered devise/sessions/new.html.haml (7.5ms)
+  Rendered pages/home.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 86ms (Views: 66.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /application.css - 200 OK (21ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /departments.css - 200 OK (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /expirations.css - 200 OK (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /active_admin.css - 200 OK (34ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /facilities.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /page.css - 200 OK (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /plants.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /stages.css - 200 OK (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /tasks.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap.css - 200 OK (6ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /jquery-ui.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /active_admin/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /active_admin/base.js - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /active_admin.js - 200 OK (2ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /departments.js - 200 OK (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /expirations.js - 200 OK (1ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /facilities.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /plants.js - 200 OK (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /stages.js - 200 OK (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /tasks.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /bootstrap.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:03:41 +0300
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/sessions/new.html.haml (5.7ms)
+  Rendered pages/home.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /application.css - 200 OK (47ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /active_admin.css - 200 OK (9ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /departments.css - 200 OK (1ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /facilities.css - 200 OK (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /expirations.css - 200 OK (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /page.css - 200 OK (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /plants.css - 200 OK (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /stages.css - 200 OK (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /tasks.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap.css - 200 OK (5ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /responsive.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /jquery-ui.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /active_admin/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /active_admin/base.js - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /active_admin.js - 200 OK (34ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /departments.js - 200 OK (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /expirations.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /facilities.js - 200 OK (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /plants.js - 200 OK (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /stages.js - 200 OK (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /tasks.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:06 +0300
+Served asset /application.js - 200 OK (5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-04-25 15:05:29 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"73lppw6m9E2iDsHBRtLHWV3m5dXlE+HDqlTs8Z5MtIQ=", "user"=>{"login"=>"evsyukovmv", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (lower(login) = 'evsyukovmv' OR lower(email) = 'evsyukovmv') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-04-25 11:15:50.762141', "current_sign_in_at" = '2012-04-25 12:05:30.020599', "sign_in_count" = 3, "updated_at" = '2012-04-25 12:05:30.021927' WHERE "users"."id" = 1[0m
+  [1m[35m (121.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 241ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered pages/home.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 59.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /active_admin.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /home.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /page.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /tasks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /active_admin/base.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /facilities.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 15:05:30 +0300
+Served asset /application.js - 304 Not Modified (35ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-25 15:05:41 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/dashboard/index.html.arb (18.5ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:05:41 +0300
+Served asset /active_admin.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 15:05:41 +0300
+Served asset /active_admin.js - 304 Not Modified (13ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-04-25 15:12:57 +0300
+Processing by Admin::DepartmentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mDepartment Exists (0.2ms)[0m  SELECT 1 FROM "departments" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "departments" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "departments" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT "departments".* FROM "departments" ORDER BY "departments"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (271.4ms)
+Completed 200 OK in 304ms (Views: 273.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 15:12:57 +0300
+Served asset /active_admin.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 15:12:57 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-25 15:12:58 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-25 15:12:58 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (2ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-25 17:34:47 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (390.8ms)
+Completed 200 OK in 397ms (Views: 392.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 17:34:48 +0300
+Served asset /active_admin.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 17:34:48 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-25 17:34:48 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-25 17:34:48 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users?utf8=%E2%9C%93&q%5Bdepartment_id_eq%5D=1&q%5Bemail_contains%5D=&q%5Bencrypted_password_contains%5D=&q%5Blogin_contains%5D=&q%5Breset_password_token_contains%5D=&q%5Breset_password_sent_at_gte%5D=&q%5Breset_password_sent_at_lte%5D=&q%5Bremember_created_at_gte%5D=&q%5Bremember_created_at_lte%5D=&q%5Bcurrent_sign_in_at_gte%5D=&q%5Bcurrent_sign_in_at_lte%5D=&q%5Blast_sign_in_at_gte%5D=&q%5Blast_sign_in_at_lte%5D=&q%5Bcurrent_sign_in_ip_contains%5D=&q%5Blast_sign_in_ip_contains%5D=&q%5Blast_name_contains%5D=&q%5Bfirst_name_contains%5D=&q%5Bmiddle_name_contains%5D=&q%5Bposition_contains%5D=&q%5Bcreated_at_gte%5D=&q%5Bcreated_at_lte%5D=&q%5Bupdated_at_gte%5D=&q%5Bupdated_at_lte%5D=&commit=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&order=id_desc&scope=" for 127.0.0.1 at 2012-04-25 17:35:15 +0300
+Processing by Admin::UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"department_id_eq"=>"1", "email_contains"=>"", "encrypted_password_contains"=>"[FILTERED]", "login_contains"=>"", "reset_password_token_contains"=>"[FILTERED]", "reset_password_sent_at_gte"=>"[FILTERED]", "reset_password_sent_at_lte"=>"[FILTERED]", "remember_created_at_gte"=>"", "remember_created_at_lte"=>"", "current_sign_in_at_gte"=>"", "current_sign_in_at_lte"=>"", "last_sign_in_at_gte"=>"", "last_sign_in_at_lte"=>"", "current_sign_in_ip_contains"=>"", "last_sign_in_ip_contains"=>"", "last_name_contains"=>"", "first_name_contains"=>"", "middle_name_contains"=>"", "position_contains"=>"", "created_at_gte"=>"", "created_at_lte"=>"", "updated_at_gte"=>"", "updated_at_lte"=>""}, "commit"=>"Фильтровать", "order"=>"id_desc", "scope"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."department_id" = 1 LIMIT 1 OFFSET 0
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (354.9ms)
+Completed 200 OK in 363ms (Views: 356.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 17:35:16 +0300
+Served asset /active_admin.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 17:35:16 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-25 17:35:16 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-04-25 17:35:25 +0300
+Processing by Admin::DepartmentsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mDepartment Exists (0.2ms)[0m  [1mSELECT 1 FROM "departments" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "departments" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT "departments".* FROM "departments" ORDER BY "departments"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (93.7ms)
+Completed 200 OK in 98ms (Views: 95.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 17:35:25 +0300
+Served asset /active_admin.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 17:35:25 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-25 17:35:25 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-25 17:35:25 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/departments/1/edit" for 127.0.0.1 at 2012-04-25 17:35:30 +0300
+Processing by Admin::DepartmentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/edit.html.arb (145.8ms)
+Completed 200 OK in 152ms (Views: 147.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 17:35:30 +0300
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 17:35:30 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2012-04-25 17:37:47 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"73lppw6m9E2iDsHBRtLHWV3m5dXlE+HDqlTs8Z5MtIQ="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 17:37:47 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/sessions/new.html.haml (3.1ms)
+  Rendered pages/home.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:47 +0300
+Served asset /application.css - 304 Not Modified (49ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:47 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:47 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:47 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /active_admin.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /active_admin.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /plants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:48 +0300
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fRNoBHT+A57lVA2jvszD4EfRykMa1P3+yQyd0sgKUFQ=", "user"=>{"login"=>"evsyukovmv", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (lower(login) = 'evsyukovmv' OR lower(email) = 'evsyukovmv') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2012-04-25 12:05:30.020599', "current_sign_in_at" = '2012-04-25 14:37:59.286500', "sign_in_count" = 4, "updated_at" = '2012-04-25 14:37:59.287115' WHERE "users"."id" = 1
+  [1m[36m (119.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 230ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered pages/home.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /active_admin.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /expirations.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 17:37:59 +0300
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-25 17:38:17 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/dashboard/index.html.arb (38.0ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 17:38:17 +0300
+Served asset /active_admin.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 17:38:17 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-04-25 17:38:24 +0300
+Processing by Admin::DepartmentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mDepartment Exists (0.2ms)[0m  [1mSELECT 1 FROM "departments" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "departments" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" ORDER BY "departments"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (114.6ms)
+Completed 200 OK in 121ms (Views: 116.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-25 17:38:24 +0300
+Served asset /active_admin.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-25 17:38:24 +0300
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-25 17:38:24 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-25 17:38:24 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:33:33 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT "departments".* FROM "departments" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (736.8ms)
+Completed 200 OK in 888ms (Views: 783.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-27 16:33:34 +0300
+Served asset /active_admin.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-27 16:33:34 +0300
+Served asset /active_admin.js - 304 Not Modified (136ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-27 16:33:34 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-27 16:33:34 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (15ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:34:46 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (417.3ms)
+Completed 200 OK in 491ms (Views: 419.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-27 16:34:47 +0300
+Served asset /active_admin.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-27 16:34:47 +0300
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-27 16:34:47 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-27 16:34:47 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:34:51 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (400.7ms)
+Completed 200 OK in 405ms (Views: 402.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-27 16:34:51 +0300
+Served asset /active_admin.css - 200 OK (7ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-27 16:34:51 +0300
+Served asset /active_admin.js - 200 OK (28ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-27 16:34:52 +0300
+Served asset /active_admin/orderable.png - 200 OK (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-27 16:34:52 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 200 OK (0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:35:41 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (403.0ms)
+Completed 200 OK in 446ms (Views: 405.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-27 16:35:42 +0300
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-27 16:35:42 +0300
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-27 16:35:42 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-27 16:35:42 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:37:18 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (421.4ms)
+Completed 200 OK in 497ms (Views: 423.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-27 16:37:19 +0300
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-27 16:37:19 +0300
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-27 16:37:19 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-27 16:37:19 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:38:23 +0300
+
+NoMethodError (undefined method `t' for #<ActiveAdmin::ResourceDSL:0x000000025e6a30>):
+  app/admin/users.rb:2:in `block in <top (required)>'
+  app/admin/users.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-04-27 16:40:27 +0300
+
+SyntaxError (/home/ty/RubyWork/rails_projects/task_manager/app/admin/users.rb:2: invalid multibyte char (US-ASCII)
+/home/ty/RubyWork/rails_projects/task_manager/app/admin/users.rb:2: invalid multibyte char (US-ASCII)
+/home/ty/RubyWork/rails_projects/task_manager/app/admin/users.rb:2: syntax error, unexpected $end, expecting keyword_end
+  menu :label => "Пользователи"
+                    ^):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-04-27 16:42:44 +0300
+
+SyntaxError (/home/ty/RubyWork/rails_projects/task_manager/app/admin/users.rb:2: invalid multibyte char (US-ASCII)
+/home/ty/RubyWork/rails_projects/task_manager/app/admin/users.rb:2: invalid multibyte char (US-ASCII)
+/home/ty/RubyWork/rails_projects/task_manager/app/admin/users.rb:2: syntax error, unexpected $end, expecting keyword_end
+  menu :label => 'Пользователи'
+                    ^):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-04-27 16:42:47 +0300
+
+ActionController::RoutingError (No route matches [GET] "/admin/departments"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-04-27 16:42:48 +0300
+
+ActionController::RoutingError (No route matches [GET] "/admin/departments"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-04-27 16:42:49 +0300
+
+ActionController::RoutingError (No route matches [GET] "/admin/departments"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:42:55 +0300
+
+ActionController::RoutingError (No route matches [GET] "/admin/users"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:50:47 +0300
+
+ActionController::RoutingError (No route matches [GET] "/admin/users"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:54:17 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (367.9ms)
+Completed 200 OK in 436ms (Views: 370.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-27 16:54:18 +0300
+Served asset /active_admin.css - 200 OK (38ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-04-27 16:54:18 +0300
+Served asset /active_admin.js - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-04-27 16:54:18 +0300
+Served asset /active_admin/orderable.png - 200 OK (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-04-27 16:54:18 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 200 OK (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-04-27 16:56:02 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/dashboard/index.html.arb (13.0ms)
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-27 16:56:02 +0300
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-04-27 16:56:17 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (383.4ms)
+Completed 200 OK in 388ms (Views: 385.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-04-27 16:56:18 +0300
+Served asset /active_admin.css - 304 Not Modified (7ms)

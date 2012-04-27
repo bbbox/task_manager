@@ -1,16 +1,17 @@
-%h2 Sign in
+%h2  #{t :sign_in_to_system}
 = form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: 'well'}) do |f|
   %div
-    = f.label :login
+    = f.label t :login
     %br/
     = f.text_field :login
   %div
-    = f.label :password
+    = f.label t :password
     %br/
     = f.password_field :password
   - if devise_mapping.rememberable?
     %div
       = f.check_box :remember_me
-      = f.label :remember_me
-  %div= f.submit "Sign in"
-= render "devise/links"
+      = f.label t :remember_me
+  %div
+    = f.submit t :sign_in
+
