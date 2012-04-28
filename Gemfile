@@ -9,6 +9,10 @@ gem 'devise'
 gem 'sqlite3'
 gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
 
+gem 'activeadmin'
+gem 'meta_search',    '>= 1.1.0.pre'
+gem 'formtastic', '~> 2.1.1'
+
 
 
 # Gems used only for assets and not required
