@@ -4,19 +4,6 @@ TaskManager::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   devise_for :users
-
-  resources :tasks
-
-  resources :expirations
-
-  resources :stages
-
-  resources :facilities
-
-  resources :plants
-
-  resources :departments
-
   root to: 'pages#home'
 
   # The priority is based upon order of creation:

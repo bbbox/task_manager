@@ -1,7 +1,26 @@
 ru:
   active_admin:
-    users: Пользователи
-    dashboard: Dashboard
+    name: "Название"
+    by_name: "названию"
+    chief: "Начальник"
+    departments: "Отделы"
+    role: "Группа"
+    by_login: "логину"
+    by_last_name: "фамилии"
+    by_first_name: "имени"
+    by_middle_name: "отчеству"
+    by_position: "должности"
+    login: "Логин"
+    last_name: "Фамилия"
+    first_name: "Имя"
+    middle_name: "Отчество"
+    department: "Отдел"
+    position: "Должность"
+    user: "Пользователь"
+    users: "Пользователи"
+    password: "Пароль"
+    password_confirmation: "Подтверждение пароля"
+    dashboard: "Главная"
     dashboard_welcome:
       welcome: "Добро пожаловать в Active Admin. Это стандартная страница управления сайтом."
       call_to_action: "Чтобы добавить сюда что-нибудь загляните в 'app/admin/dashboards.rb'"
