@@ -11,6 +11,7 @@ ActiveAdmin.register Department do
     f.buttons
   end
 
+
   index do
     column I18n.t('active_admin.name'), :name
     column I18n.t('active_admin.chief'), :chief
