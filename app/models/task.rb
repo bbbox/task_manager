@@ -1,17 +1,15 @@
 class Task < ActiveRecord::Base
 
+  attr_accessible :number, :issued_department_id, :received_department_id, :facility_id,:stage_id, :contract_number,
+                  :issued_chief_id, :received_chief_id, :issued_group_head_id, :received_group_head_id,
+                  :received_staff_id, :chief_project_engineer_id, :issue_date, :description
+
   validates :number, presence: true
   validates :issued_department_id, presence: true
   validates :received_department_id, presence: true
   validates :facility_id, presence: true
   validates :stage_id, presence: true
   validates :contract_number, presence: true
-  validates :issued_chief_id, presence: true
-  validates :received_chief_id, presence: true
-  validates :issued_group_head_id, presence: true
-  validates :received_group_head_id, presence: true
-  validates :received_staff_id, presence: true
-  validates :chief_project_engineer_id, presence: true
   validates :issue_date, presence: true
 
 
