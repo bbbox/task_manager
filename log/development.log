@@ -17430,3 +17430,1167 @@ Served asset /active_admin.css - 304 Not Modified (11ms)
 
 Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-05-01 23:18:10 +0300
 Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-20 21:33:37 +0300
+Processing by PagesController#home as HTML
+  Rendered devise/sessions/new.html.haml (7.0ms)
+  Rendered pages/home.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 1023ms (Views: 1001.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /application.css - 200 OK (74ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /departments.css - 200 OK (1ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /expirations.css - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /active_admin.css - 200 OK (39ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /facilities.css - 200 OK (2ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /page.css - 200 OK (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /pages.css - 200 OK (2ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /plants.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /stages.css - 200 OK (2ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /tasks.css - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /bootstrap.css - 200 OK (21ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /responsive.css - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /jquery-ui.js - 200 OK (6ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /active_admin/application.js - 200 OK (4ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /active_admin/base.js - 200 OK (8ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /active_admin.js - 200 OK (9ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /departments.js - 200 OK (1ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /expirations.js - 200 OK (2ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /facilities.js - 200 OK (5ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /pages.js - 200 OK (2ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /plants.js - 200 OK (1ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /stages.js - 200 OK (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /tasks.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:38 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap-scrollspy.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /application.js - 200 OK (29ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:39 +0300
+Served asset /bootstrap.js - 304 Not Modified (15ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-05-20 21:33:43 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "user"=>{"login"=>"evsyukovmv@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (lower(login) = 'evsyukovmv@gmail.com' OR lower(email) = 'evsyukovmv@gmail.com') LIMIT 1[0m
+Completed 401 Unauthorized in 106ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "user"=>{"login"=>"evsyukovmv@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  Rendered devise/sessions/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 164ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /plants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /tasks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /active_admin/base.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /plants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:44 +0300
+Served asset /application.js - 304 Not Modified (38ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "user"=>{"login"=>"evsyukovmv@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (lower(login) = 'evsyukovmv@gmail.com' OR lower(email) = 'evsyukovmv@gmail.com') LIMIT 1
+Completed 401 Unauthorized in 104ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "user"=>{"login"=>"evsyukovmv@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  Rendered devise/sessions/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 164ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /active_admin.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /page.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /plants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /active_admin.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /facilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-20 21:33:52 +0300
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-05-20 21:34:51 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "user"=>{"login"=>"evsyukovmv@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (lower(login) = 'evsyukovmv@gmail.com' OR lower(email) = 'evsyukovmv@gmail.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-05-18 18:27:24.752083', "current_sign_in_at" = '2012-05-20 18:34:51.722984', "sign_in_count" = 13, "updated_at" = '2012-05-20 18:34:51.724175' WHERE "users"."id" = 1[0m
+  [1m[35m (145.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 274ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-20 21:34:51 +0300
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered pages/home.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 108ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /active_admin.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/departments.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /departments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /expirations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/facilities.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /facilities.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/page.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /page.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /plants.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /stages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /active_admin/base.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /active_admin.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/departments.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /departments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expirations.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /expirations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facilities.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /facilities.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /plants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/stages.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /stages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /bootstrap.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-20 21:34:52 +0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-05-20 21:35:04 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/dashboard/index.html.arb (51.0ms)
+Completed 200 OK in 111ms (Views: 107.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:05 +0300
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-05-20 21:35:05 +0300
+Served asset /active_admin.js - 200 OK (104ms)
+
+
+Started GET "/admin/plants" for 127.0.0.1 at 2012-05-20 21:35:09 +0300
+Processing by Admin::PlantsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mPlant Exists (0.2ms)[0m  SELECT 1 FROM "plants" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "plants" [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "plants" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mPlant Load (0.2ms)[0m  [1mSELECT "plants".* FROM "plants" ORDER BY "plants"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (367.5ms)
+Completed 200 OK in 451ms (Views: 412.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:10 +0300
+Served asset /active_admin.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-05-20 21:35:11 +0300
+Served asset /active_admin/orderable.png - 200 OK (64ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:35:12 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTask Exists (0.1ms)[0m  [1mSELECT 1 FROM "tasks" LIMIT 1 OFFSET 0[0m
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mFacility Load (0.1ms)[0m  SELECT "facilities".* FROM "facilities" 
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (179.1ms)
+Completed 200 OK in 186ms (Views: 180.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:12 +0300
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-05-20 21:35:13 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 200 OK (78ms)
+
+
+Started GET "/admin/tasks/new" for 127.0.0.1 at 2012-05-20 21:35:14 +0300
+Processing by Admin::TasksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mDepartment Load (0.3ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mFacility Load (0.2ms)[0m  SELECT "facilities".* FROM "facilities" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/new.html.arb (176.8ms)
+Completed 200 OK in 244ms (Views: 217.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:14 +0300
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2012-05-20 21:35:21 +0300
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" WHERE "departments"."id" = 1 LIMIT 1
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (260.2ms)
+Completed 200 OK in 267ms (Views: 261.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:22 +0300
+Served asset /active_admin.css - 304 Not Modified (38ms)
+
+
+Started GET "/admin/departments" for 127.0.0.1 at 2012-05-20 21:35:24 +0300
+Processing by Admin::DepartmentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mDepartment Exists (0.2ms)[0m  [1mSELECT 1 FROM "departments" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "departments" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "departments" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" ORDER BY "departments"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (83.6ms)
+Completed 200 OK in 90ms (Views: 85.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:24 +0300
+Served asset /active_admin.css - 304 Not Modified (39ms)
+
+
+Started GET "/admin/plants" for 127.0.0.1 at 2012-05-20 21:35:26 +0300
+Processing by Admin::PlantsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mPlant Exists (0.2ms)[0m  [1mSELECT 1 FROM "plants" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "plants" 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "plants" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mPlant Load (0.2ms)[0m  SELECT "plants".* FROM "plants" ORDER BY "plants"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (82.7ms)
+Completed 200 OK in 87ms (Views: 84.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:26 +0300
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:35:27 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Exists (0.2ms)[0m  SELECT 1 FROM "tasks" LIMIT 1 OFFSET 0
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mFacility Load (0.2ms)[0m  [1mSELECT "facilities".* FROM "facilities" [0m
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (80.4ms)
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:27 +0300
+Served asset /active_admin.css - 304 Not Modified (41ms)
+
+
+Started GET "/admin/tasks/new" for 127.0.0.1 at 2012-05-20 21:35:29 +0300
+Processing by Admin::TasksController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mFacility Load (0.2ms)[0m  [1mSELECT "facilities".* FROM "facilities" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/new.html.arb (79.5ms)
+Completed 200 OK in 84ms (Views: 81.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:29 +0300
+Served asset /active_admin.css - 304 Not Modified (8ms)
+
+
+Started POST "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:35:47 +0300
+Processing by Admin::TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "task"=>{"number"=>"4343243224", "issued_department_id"=>"1", "received_department_id"=>"2", "facility_id"=>"1", "issued_chief_id"=>"1", "received_chief_id"=>"1", "issued_group_head_id"=>"1", "received_group_head_id"=>"1", "received_staff_id"=>"1", "chief_project_engineer_id"=>"1", "description"=>"hkhhjhkjlk jkljl;jjrv f fas"}, "commit"=>"Create Task"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" WHERE "departments"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" WHERE "departments"."id" = 2 LIMIT 1
+  [1m[36mFacility Load (0.2ms)[0m  [1mSELECT "facilities".* FROM "facilities" [0m
+  [1m[35mFacility Load (0.1ms)[0m  SELECT "facilities".* FROM "facilities" WHERE "facilities"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/new.html.arb (98.6ms)
+Completed 200 OK in 112ms (Views: 99.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:47 +0300
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started POST "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:35:51 +0300
+Processing by Admin::TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "task"=>{"number"=>"4343243224", "issued_department_id"=>"1", "received_department_id"=>"2", "facility_id"=>"1", "issued_chief_id"=>"1", "received_chief_id"=>"1", "issued_group_head_id"=>"1", "received_group_head_id"=>"1", "received_staff_id"=>"1", "chief_project_engineer_id"=>"1", "description"=>"hkhhjhkjlk jkljl;jjrv f fas"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" WHERE "departments"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" WHERE "departments"."id" = 2 LIMIT 1[0m
+  [1m[35mFacility Load (0.2ms)[0m  SELECT "facilities".* FROM "facilities" 
+  [1m[36mFacility Load (0.1ms)[0m  [1mSELECT "facilities".* FROM "facilities" WHERE "facilities"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/new.html.arb (88.2ms)
+Completed 200 OK in 95ms (Views: 89.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:35:51 +0300
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started POST "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:37:16 +0300
+Processing by Admin::TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "task"=>{"number"=>"4343243224", "issued_department_id"=>"1", "received_department_id"=>"2", "facility_id"=>"1", "issued_chief_id"=>"1", "received_chief_id"=>"1", "issued_group_head_id"=>"1", "received_group_head_id"=>"1", "received_staff_id"=>"1", "chief_project_engineer_id"=>"1", "description"=>"hkhhjhkjlk jkljl;jjrv f fas"}, "commit"=>"Create Task"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" WHERE "departments"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" WHERE "departments"."id" = 2 LIMIT 1
+  [1m[36mFacility Load (0.2ms)[0m  [1mSELECT "facilities".* FROM "facilities" [0m
+  [1m[35mFacility Load (0.1ms)[0m  SELECT "facilities".* FROM "facilities" WHERE "facilities"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/new.html.arb (55.7ms)
+Completed 200 OK in 93ms (Views: 57.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:37:16 +0300
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started POST "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:37:20 +0300
+Processing by Admin::TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "task"=>{"number"=>"4343243224", "issued_department_id"=>"1", "received_department_id"=>"2", "facility_id"=>"1", "issued_chief_id"=>"1", "received_chief_id"=>"1", "issued_group_head_id"=>"1", "received_group_head_id"=>"1", "received_staff_id"=>"1", "chief_project_engineer_id"=>"1", "description"=>"hkhhjhkjlk jkljl;jjrv f fas"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" WHERE "departments"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" WHERE "departments"."id" = 2 LIMIT 1[0m
+  [1m[35mFacility Load (0.2ms)[0m  SELECT "facilities".* FROM "facilities" 
+  [1m[36mFacility Load (0.2ms)[0m  [1mSELECT "facilities".* FROM "facilities" WHERE "facilities"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:25)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/new.html.arb (99.7ms)
+Completed 200 OK in 107ms (Views: 100.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:37:20 +0300
+Served asset /active_admin.css - 304 Not Modified (42ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:50:57 +0300
+
+SyntaxError (/home/emv/rails_projects/task_manager/app/admin/tasks.rb:14: invalid multibyte char (US-ASCII)
+/home/emv/rails_projects/task_manager/app/admin/tasks.rb:14: invalid multibyte char (US-ASCII)
+/home/emv/rails_projects/task_manager/app/admin/tasks.rb:14: syntax error, unexpected $end, expecting keyword_end
+...t  :contract_number, label: "Номер контракта"
+...                               ^):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:54:08 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTask Exists (0.1ms)[0m  [1mSELECT 1 FROM "tasks" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tasks" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "tasks" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mFacility Load (0.2ms)[0m  [1mSELECT "facilities".* FROM "facilities" WHERE "facilities"."id" = 1 LIMIT 1[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mFacility Load (0.2ms)[0m  SELECT "facilities".* FROM "facilities" 
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (188.6ms)
+Completed 200 OK in 246ms (Views: 196.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:54:09 +0300
+Served asset /active_admin.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-05-20 21:54:09 +0300
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-05-20 21:54:10 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-05-20 21:54:10 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/tasks/new" for 127.0.0.1 at 2012-05-20 21:54:14 +0300
+Processing by Admin::TasksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/new.html.arb (25.6ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `stage' for #<Task:0x00000004f5a678>):
+    1: render renderer_for(:new)
+  app/admin/tasks.rb:15:in `block (3 levels) in <top (required)>'
+  app/admin/tasks.rb:12:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/admin/tasks/new" for 127.0.0.1 at 2012-05-20 21:54:29 +0300
+Processing by Admin::TasksController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mFacility Load (0.2ms)[0m  [1mSELECT "facilities".* FROM "facilities" [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:28)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/emv/rails_projects/task_manager/app/admin/tasks.rb:28)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/new.html.arb (157.2ms)
+Completed 200 OK in 257ms (Views: 159.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:54:30 +0300
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-05-20 21:54:30 +0300
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started POST "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:54:50 +0300
+Processing by Admin::TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Loy4RP8LoKx21+MVvml+/cUzh9cXT58fU/k5CojPHBY=", "task"=>{"number"=>"34324", "contract_number"=>"dsfasds", "stage_id"=>"3", "issue_date(3i)"=>"4", "issue_date(2i)"=>"7", "issue_date(1i)"=>"2010", "issued_department_id"=>"1", "received_department_id"=>"2", "facility_id"=>"1", "issued_chief_id"=>"1", "received_chief_id"=>"1", "issued_group_head_id"=>"1", "received_group_head_id"=>"1", "received_staff_id"=>"1", "chief_project_engineer_id"=>"1", "description"=>""}, "commit"=>"Create Task"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "tasks" ("chief_project_engineer_id", "code", "comments", "contract_number", "created_at", "description", "detailed_schedule_number", "facility_id", "issue_date", "issued_chief_id", "issued_department_id", "issued_group_head_id", "number", "received_chief_id", "received_department_id", "received_group_head_id", "received_staff_id", "stage_id", "stamp_name", "step_number", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["chief_project_engineer_id", 1], ["code", nil], ["comments", nil], ["contract_number", "dsfasds"], ["created_at", Sun, 20 May 2012 18:54:50 UTC +00:00], ["description", ""], ["detailed_schedule_number", nil], ["facility_id", 1], ["issue_date", Sun, 04 Jul 2010], ["issued_chief_id", 1], ["issued_department_id", 1], ["issued_group_head_id", 1], ["number", "34324"], ["received_chief_id", 1], ["received_department_id", 2], ["received_group_head_id", 1], ["received_staff_id", 1], ["stage_id", 3], ["stamp_name", nil], ["step_number", nil], ["updated_at", Sun, 20 May 2012 18:54:50 UTC +00:00]]
+  [1m[36m (104.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/tasks/7
+Completed 302 Found in 121ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/tasks/7" for 127.0.0.1 at 2012-05-20 21:54:50 +0300
+Processing by Admin::TasksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" WHERE "departments"."id" = 1 LIMIT 1
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT "departments".* FROM "departments" WHERE "departments"."id" = 2 LIMIT 1[0m
+  [1m[35mFacility Load (0.1ms)[0m  SELECT "facilities".* FROM "facilities" WHERE "facilities"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Task' AND "active_admin_comments"."resource_id" = '7' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Task' AND "active_admin_comments"."resource_id" = '7' AND "active_admin_comments"."namespace" = 'admin'
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/emv/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/emv/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295)
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/show.html.arb (91.9ms)
+Completed 200 OK in 107ms (Views: 102.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:54:50 +0300
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-05-20 21:54:50 +0300
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-05-20 21:54:54 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Exists (0.2ms)[0m  SELECT 1 FROM "tasks" LIMIT 1 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "tasks" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "tasks" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mFacility Load (0.2ms)[0m  SELECT "facilities".* FROM "facilities" WHERE "facilities"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facilities".* FROM "facilities" WHERE "facilities"."id" = 1 LIMIT 1[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mFacility Load (0.2ms)[0m  SELECT "facilities".* FROM "facilities" 
+  Rendered /home/emv/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (134.5ms)
+Completed 200 OK in 141ms (Views: 135.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-05-20 21:54:54 +0300
+Served asset /active_admin.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-05-20 21:54:54 +0300
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-05-20 21:54:55 +0300
+Served asset /active_admin/orderable.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-05-20 21:54:55 +0300
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
