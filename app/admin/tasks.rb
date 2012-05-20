@@ -11,6 +11,9 @@ ActiveAdmin.register Task do
   form do |f|
     f.inputs I18n.t('active_admin.task') do
       f.input  :number, label: I18n.t('active_admin.number')
+      f.input  :contract_number, label: I18n.t('active_admin.contract_number')
+      f.input  :stage_id, label: I18n.t('active_admin.stage')
+      f.input  :issue_date, lable: I18n.t('active_admin.issue_date')
       f.input  :issued_department, label: I18n.t('active_admin.issued_department')
       f.input  :received_department, label: I18n.t('active_admin.received_department')
       f.input  :facility, label: I18n.t('active_admin.facility')

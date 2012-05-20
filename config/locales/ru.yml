@@ -25,6 +25,8 @@ ru:
     received_staff: "Зав. группой"
     chief_project_engineer: "ГИП"
     number: "Номер"
+    contract_number: "Номер контракта"
+    stage: "Этап"
     description: "Описание"
     by_login: "логину"
     by_last_name: "фамилии"
