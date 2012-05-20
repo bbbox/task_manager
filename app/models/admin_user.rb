@@ -1,29 +1,17 @@
-class User < ActiveRecord::Base
+class AdminUser < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable, 
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :login, :first_name, :last_name, :middle_name,
-      :department_id, :position
-
-  has_and_belongs_to_many :tasks
-  has_and_belongs_to_many :roles
-  belongs_to :department
-
-
- # has_many :tasks
-
-  validates :login, presence: true
-
-  validates :login, uniqueness: true, length: { within: 4..36 }
+  attr_accessor :login
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :login
 
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
     login = conditions.delete(:login).downcase
     where(conditions).where(["lower(login) = :value OR lower(email) = :value", { :value => login.downcase }]).first
   end
-
 
 end
