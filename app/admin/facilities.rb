@@ -13,5 +13,12 @@ ActiveAdmin.register Facility do
     end
     f.buttons
   end
+
+  index do
+    column I18n.t('active_admin.number'), :name
+    column I18n.t('active_admin.serial'), :serial
+    column I18n.t('active_admin.facility'), :plant
+    default_actions
+  end
   
 end

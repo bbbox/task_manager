@@ -12,7 +12,7 @@ ActiveAdmin.register Task do
     f.inputs I18n.t('active_admin.task') do
       f.input  :number, label: I18n.t('active_admin.number')
       f.input  :contract_number, label: I18n.t('active_admin.contract_number')
-      f.input  :stage_id, label: I18n.t('active_admin.stage')
+      f.input  :stage, label: I18n.t('active_admin.stage')
       f.input  :issue_date, lable: I18n.t('active_admin.issue_date')
       f.input  :issued_department, label: I18n.t('active_admin.issued_department')
       f.input  :received_department, label: I18n.t('active_admin.received_department')
@@ -30,8 +30,10 @@ ActiveAdmin.register Task do
 
   index do
     column I18n.t('active_admin.number'), :number
-    column I18n.t('active_admin.description'), :description
     column I18n.t('active_admin.facility'), :facility
+    column I18n.t('active_admin.received_staff'), :received_staff
+    column I18n.t('active_admin.stage'), :stage
+    column I18n.t('active_admin.description'), :description
     column I18n.t('active_admin.issue_date'), :issue_date
 
     default_actions
