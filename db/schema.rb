@@ -11,20 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120424133549) do
+ActiveRecord::Schema.define(:version => 20120722171102) do
+
+  create_table "active_admin_comments", :force => true do |t|
+    t.string   "resource_id",   :null => false
+    t.string   "resource_type", :null => false
+    t.integer  "author_id"
+    t.string   "author_type"
+    t.text     "body"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "namespace"
+  end
+
+  add_index "active_admin_comments", ["author_type", "author_id"], :name => "index_active_admin_comments_on_author_type_and_author_id"
+  add_index "active_admin_comments", ["namespace"], :name => "index_active_admin_comments_on_namespace"
+  add_index "active_admin_comments", ["resource_type", "resource_id"], :name => "index_admin_notes_on_resource_type_and_resource_id"
 
   create_table "departments", :force => true do |t|
     t.string   "name"
     t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "expirations", :force => true do |t|
-    t.date     "date"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "task_id"
   end
 
   create_table "facilities", :force => true do |t|
@@ -84,6 +92,9 @@ ActiveRecord::Schema.define(:version => 20120424133549) do
     t.date     "issue_date"
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
+    t.string   "state"
+    t.date     "completion_date"
+    t.datetime "actual_completion_date"
   end
 
   create_table "tasks_users", :id => false, :force => true do |t|
