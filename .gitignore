@@ -6,20 +6,10 @@
 /db/*.sqlite3
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
-
-<<<<<<< HEAD
-# Ignore other unnedded files.
-=======
-# Ignore other unneeded files.
->>>>>>> 9f6d9967c0c89e65e8bd0b79afa002230b186da2
+/log/*
+/tmp/*
 .rvmrc
 tmp
 *.gem
 Gemfile.lock
-<<<<<<< HEAD
 .idea
-=======
-.idea
->>>>>>> 9f6d9967c0c89e65e8bd0b79afa002230b186da2

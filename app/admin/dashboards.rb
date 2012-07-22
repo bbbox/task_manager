@@ -1,5 +1,47 @@
 ActiveAdmin::Dashboards.build do
 
+  section "Your tasks for this week" do
+    table_for Task.where('received_staff_id IS ? and completion_date > ? and "completion_date" < ?', current_user.id, Time.now, 1.week.from_now) do |t|
+      t.column("Status") do  |task|
+       if task.state == "active"
+         status_tag "Active", :error
+       elsif task.state == "in_progress"
+         status_tag "In Progress", :error
+       elsif task.state == "done"
+         status_tag "Done", :ok
+       elsif task.state == "paused"
+         status_tag "Paused", :error
+
+    #{ |task| status_tag (task.state == "active" ? "Active" : "Paused"), (task.state == "active" ? :ok : :error)}
+       end
+      end
+      t.column("Number") { |task| link_to task.number, admin_task_path(task) }
+      t.column("Completion Date") { |task| task.completion_date? ? l(task.completion_date, :format => :long) : '-' }
+    end
+  end
+
+  section "Tasks that are late" do
+    table_for Task.where('received_staff_id IS ? and completion_date < ?',current_user.id, Time.now) do |t|
+      t.column("Status") do  |task|
+        if task.state == "active"
+          status_tag "Active", :error
+        elsif task.state == "in_progress"
+          status_tag "In Progress", :error
+        elsif task.state == "done"
+          status_tag "Done", :ok
+        elsif task.state == "paused"
+          status_tag "Paused", :error
+
+          #{ |task| status_tag (task.state == "active" ? "Active" : "Paused"), (task.state == "active" ? :ok : :error)}
+        end
+      end
+      t.column("Number") { |task| link_to task.number, admin_task_path(task) }
+      t.column("Completion Date") { |task| task.completion_date? ? l(task.completion_date, :format => :long) : '-' }
+    end
+  end
+
+
+
   # Define your dashboard sections here. Each block will be
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.

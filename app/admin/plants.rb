@@ -12,4 +12,12 @@ ActiveAdmin.register Plant do
     end
     f.buttons
   end
+
+  index do
+    column(:name)  { |plant| link_to plant.name, admin_tasks_path }
+    column :serial
+    column :address
+    default_actions
+  end
+
 end
