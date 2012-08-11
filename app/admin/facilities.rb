@@ -15,10 +15,19 @@ ActiveAdmin.register Facility do
   end
 
   index do
-    column I18n.t('active_admin.number'), :name
+    column I18n.t('active_admin.name'), :name
     column I18n.t('active_admin.serial'), :serial
-    column I18n.t('active_admin.facility'), :plant
+    column I18n.t('active_admin.plant'), :plant
     default_actions
+  end
+
+  show title: :name do
+    attributes_table do
+      row :id
+      row :name
+      row :serial
+      row :plant
+    end
   end
   
 end

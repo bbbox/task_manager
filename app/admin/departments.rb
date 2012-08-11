@@ -1,5 +1,6 @@
 ActiveAdmin.register Department do
   menu :label => I18n.t('active_admin.departments')
+
   filter :name, label: I18n.t('active_admin.by_name')
   filter :chief, label: I18n.t('active_admin.chief')
 

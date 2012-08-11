@@ -7,7 +7,7 @@ ActiveAdmin.register Plant do
   form do |f|
     f.inputs I18n.t('active_admin.plant') do
       f.input :name, label: I18n.t('active_admin.name')
-      f.input  :serial, label: I18n.t('active_admin.serial')
+      f.input :country, label: I18n.t('active_admin.country')
       f.input  :address, label: I18n.t('active_admin.address')
     end
     f.buttons
