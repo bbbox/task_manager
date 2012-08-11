@@ -1,7 +1,7 @@
 ActiveAdmin::Dashboards.build do
 
   section "Your tasks for this week" do
-    table_for Task.where('received_staff_id IS ? and completion_date > ? and "completion_date" < ?', current_user.id, Time.now, 1.week.from_now) do |t|
+    table_for Task.where('received_staff_id = ? and completion_date > ? and "completion_date" < ?', current_user.id, Time.now, 1.week.from_now) do |t|
       t.column("Status") do  |task|
        if task.state == "active"
          status_tag "Active", :error
@@ -21,7 +21,7 @@ ActiveAdmin::Dashboards.build do
   end
 
   section "Tasks that are late" do
-    table_for Task.where('received_staff_id IS ? and completion_date < ?',current_user.id, Time.now) do |t|
+    table_for Task.where('received_staff_id = ? and completion_date < ?',current_user.id, Time.now) do |t|
       t.column("Status") do  |task|
         if task.state == "active"
           status_tag "Active", :error
