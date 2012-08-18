@@ -18594,3 +18594,820 @@ Served asset /active_admin/orderable.png - 304 Not Modified (1ms)
 
 Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-05-20 21:54:55 +0300
 Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+  [1m[36m (0.2ms)[0m  [1mSET search_path TO public[0m
+
+
+Started GET "/admin/stages/1" for 127.0.0.1 at 2012-08-11 23:46:59 +0300
+  [1m[35m (0.2ms)[0m  SET search_path TO public
+Processing by Admin::StagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mStage Load (0.6ms)[0m  SELECT "stages".* FROM "stages" WHERE "stages"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Stage' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Stage' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/benchmark.rb:295)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/show.html.arb (305.0ms)
+Completed 200 OK in 413ms (Views: 343.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:47:04 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Load (0.6ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc
+Completed 500 Internal Server Error in 38ms
+
+NoMethodError (undefined method `page' for []:Array):
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:119:in `paginate'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:115:in `active_admin_collection'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:13:in `collection'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:447:in `_run__575295875203893985__process_action__2617657807846273838__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1307892159202997124__call__3679400813179799686__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.1ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:47:24 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Load (0.7ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc
+Completed 500 Internal Server Error in 46ms
+
+NoMethodError (undefined method `page' for []:Array):
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:119:in `paginate'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:115:in `active_admin_collection'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:13:in `collection'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:447:in `_run__575295875203893985__process_action__2617657807846273838__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1307892159202997124__call__3679400813179799686__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:47:26 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `page' for []:Array):
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:119:in `paginate'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:115:in `active_admin_collection'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:13:in `collection'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:447:in `_run__575295875203893985__process_action__2617657807846273838__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1307892159202997124__call__3679400813179799686__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:47:27 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `page' for []:Array):
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:119:in `paginate'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:115:in `active_admin_collection'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:13:in `collection'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:447:in `_run__575295875203893985__process_action__2617657807846273838__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1307892159202997124__call__3679400813179799686__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:47:28 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `page' for []:Array):
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:119:in `paginate'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:115:in `active_admin_collection'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:13:in `collection'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:447:in `_run__575295875203893985__process_action__2617657807846273838__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1307892159202997124__call__3679400813179799686__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:47:29 +0300
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `page' for []:Array):
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:119:in `paginate'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:115:in `active_admin_collection'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:13:in `collection'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:447:in `_run__575295875203893985__process_action__2617657807846273838__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__1307892159202997124__call__3679400813179799686__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+  [1m[36m (0.2ms)[0m  [1mSET search_path TO public[0m
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:54:24 +0300
+  [1m[35m (0.2ms)[0m  SET search_path TO public
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Exists (0.5ms)[0m  SELECT 1 FROM "tasks" LIMIT 1 OFFSET 0
+  [1m[36mDepartment Load (0.4ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mFacility Load (0.3ms)[0m  [1mSELECT "facilities".* FROM "facilities" [0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (416.5ms)
+Completed 200 OK in 542ms (Views: 449.9ms | ActiveRecord: 9.2ms)
+  [1m[36m (0.2ms)[0m  [1mSET search_path TO public[0m
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:55:29 +0300
+  [1m[35m (0.2ms)[0m  SET search_path TO public
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Load (0.8ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc
+Completed 500 Internal Server Error in 91ms
+
+NoMethodError (undefined method `page' for []:Array):
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:119:in `paginate'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:115:in `active_admin_collection'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:13:in `collection'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:447:in `_run__2006483290525882040__process_action__573736628374940993__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__2905360191395147733__call__4477585354447580435__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+  [1m[36m (0.2ms)[0m  [1mSET search_path TO public[0m
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:56:28 +0300
+  [1m[35m (0.1ms)[0m  SET search_path TO public
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "tasks" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "tasks" WHERE (completion_date < '2012-08-11 20:56:28.806133')[0m
+  [1m[35mTask Exists (0.4ms)[0m  SELECT 1 FROM "tasks" LIMIT 1 OFFSET 0
+  [1m[36mDepartment Load (0.3ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mFacility Load (0.3ms)[0m  [1mSELECT "facilities".* FROM "facilities" [0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (381.8ms)
+Completed 200 OK in 506ms (Views: 413.7ms | ActiveRecord: 10.2ms)
+  [1m[36m (0.2ms)[0m  [1mSET search_path TO public[0m
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:57:00 +0300
+  [1m[35m (0.1ms)[0m  SET search_path TO public
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "tasks" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "tasks" WHERE (completion_date > '2012-08-11 20:57:00.610925' and completion_date < '2012-08-18 20:57:00.610950')[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "tasks" WHERE (completion_date < '2012-08-11 20:57:00.618119')
+  [1m[36mTask Exists (0.3ms)[0m  [1mSELECT 1 FROM "tasks" LIMIT 1 OFFSET 0[0m
+  [1m[35mDepartment Load (0.3ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mFacility Load (0.3ms)[0m  SELECT "facilities".* FROM "facilities" 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (358.5ms)
+Completed 200 OK in 496ms (Views: 401.4ms | ActiveRecord: 11.1ms)
+  [1m[36m (0.2ms)[0m  [1mSET search_path TO public[0m
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:58:37 +0300
+  [1m[35m (0.1ms)[0m  SET search_path TO public
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "tasks" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mDepartment Load (0.4ms)[0m  [1mSELECT "departments".* FROM "departments" WHERE "departments"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "tasks" WHERE (issued_department_id = 1)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "tasks" WHERE (completion_date > '2012-08-11 20:58:37.651095' and completion_date < '2012-08-18 20:58:37.651121')[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "tasks" WHERE (completion_date < '2012-08-11 20:58:37.654622')
+  [1m[36mTask Exists (0.5ms)[0m  [1mSELECT 1 FROM "tasks" LIMIT 1 OFFSET 0[0m
+  [1m[35mDepartment Load (0.5ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mFacility Load (0.3ms)[0m  SELECT "facilities".* FROM "facilities" 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (417.7ms)
+Completed 200 OK in 558ms (Views: 448.0ms | ActiveRecord: 11.7ms)
+  [1m[36m (0.2ms)[0m  [1mSET search_path TO public[0m
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-11 23:59:13 +0300
+  [1m[35m (0.2ms)[0m  SET search_path TO public
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTask Load (0.6ms)[0m  SELECT "tasks".* FROM "tasks" ORDER BY "tasks"."id" desc
+Completed 500 Internal Server Error in 92ms
+
+NoMethodError (undefined method `page' for []:Array):
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:119:in `paginate'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:115:in `active_admin_collection'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/collection.rb:13:in `collection'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  activeadmin (0.4.3) lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:447:in `_run__4608100314973331224__process_action__2703895612369458780__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.1) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.1) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.1) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.1) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.1) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.1) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.1) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  sass (3.1.16) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__2432747370041630250__call__1877024671002276184__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ty/.rvm/rubies/ruby-1.9.3-p0/lib64/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+  [1m[36m (0.2ms)[0m  [1mSET search_path TO public[0m
+
+
+Started GET "/admin/tasks" for 127.0.0.1 at 2012-08-12 11:15:26 +0300
+  [1m[35m (0.1ms)[0m  SET search_path TO public
+Processing by Admin::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "tasks" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "tasks" [0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "tasks" WHERE (received_department_id = 1)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "tasks" WHERE (issued_department_id = 1)[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "tasks" WHERE (completion_date > '2012-08-12 08:15:26.947660' and completion_date < '2012-08-19 08:15:26.947690')
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "tasks" WHERE (completion_date < '2012-08-12 08:15:26.968149')[0m
+  [1m[35mTask Exists (0.3ms)[0m  SELECT 1 FROM "tasks" LIMIT 1 OFFSET 0
+  [1m[36mDepartment Load (0.3ms)[0m  [1mSELECT "departments".* FROM "departments" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "departments".* FROM "departments" 
+  [1m[36mFacility Load (0.3ms)[0m  [1mSELECT "facilities".* FROM "facilities" [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  Rendered /home/ty/.rvm/gems/ruby-1.9.3-p0@task_manager_gemset/gems/activeadmin-0.4.3/app/views/active_admin/resource/index.html.arb (528.8ms)
+Completed 200 OK in 726ms (Views: 604.5ms | ActiveRecord: 11.4ms)

@@ -6,7 +6,6 @@ gem 'therubyracer'
 gem 'haml-rails'
 gem 'devise'
 
-gem 'sqlite3'
 gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
 
 gem 'activeadmin'
@@ -28,10 +27,12 @@ group :assets do
 end
 
 group :development do
+  gem 'sqlite3'
   gem 'rspec-rails'
 end
 
 group :test do
+  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
@@ -40,6 +41,11 @@ group :test do
   gem 'cucumber-rails', '1.2.1'
   gem 'capybara', '1.1.2'
   gem 'email_spec'
+end
+
+
+group :production do
+  gem 'pg'
 end
 
 gem 'jquery-rails'

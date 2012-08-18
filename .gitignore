@@ -11,5 +11,4 @@
 .rvmrc
 tmp
 *.gem
-Gemfile.lock
 .idea
