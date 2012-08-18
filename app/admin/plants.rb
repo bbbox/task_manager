@@ -1,8 +1,22 @@
 ActiveAdmin.register Plant do
+
+  controller do
+    def create
+      create! do |format|
+        format.html { redirect_to admin_plants_url }
+      end
+    end
+
+    def update
+      update! do |format|
+        format.html { redirect_to admin_plants_url }
+      end
+    end
+  end
+
   menu :label => I18n.t('active_admin.plants')
 
   filter :name, label: I18n.t('active_admin.by_name')
-  filter :serial, label: I18n.t('active_admin.by_serial')
 
   form do |f|
     f.inputs I18n.t('active_admin.plant') do
@@ -14,9 +28,8 @@ ActiveAdmin.register Plant do
   end
 
   index do
-    column(:name)  { |plant| link_to plant.name, admin_tasks_path }
-    column :serial
-    column :address
+    column( I18n.t('active_admin.name'), :name)  { |plant| link_to plant.name, admin_tasks_path }
+    column I18n.t('active_admin.address'), :address
     default_actions
   end
 

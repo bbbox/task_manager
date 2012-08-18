@@ -1,5 +1,21 @@
 ActiveAdmin.register User do
+
+  controller do
+    def create
+      create! do |format|
+        format.html { redirect_to admin_users_url }
+      end
+    end
+
+    def update
+      update! do |format|
+        format.html { redirect_to admin_users_url }
+      end
+    end
+  end
+
   menu :label => I18n.t('active_admin.users')
+
   filter :login, label: I18n.t('active_admin.by_login')
   filter :last_name, label: I18n.t('active_admin.by_last_name')
   filter :first_name, label: I18n.t('active_admin.by_first_name')
