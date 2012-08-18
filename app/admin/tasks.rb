@@ -1,5 +1,19 @@
 ActiveAdmin.register Task do
 
+  controller do
+    def create
+      create! do |format|
+        format.html { redirect_to admin_tasks_url }
+      end
+    end
+
+    def update
+      update! do |format|
+        format.html { redirect_to admin_tasks_url }
+      end
+    end
+  end
+
   menu :label => I18n.t('.active_admin.tasks')
 
   scope :all, :default => true, label: I18n.t('.active_admin.all')
@@ -24,7 +38,7 @@ ActiveAdmin.register Task do
   filter :received_department, label: I18n.t('.active_admin.received_department')
   filter :facility, label: I18n.t('.active_admin.facility')
   filter :number, label: I18n.t('.active_admin.by_number')
-  filter :issue_date, label: I18n.t('.active_admin.issue_date')
+  filter :issue_date, label: I18n.t('active_admin.issue_date')
   filter :received_staff, label: I18n.t('.active_admin.received_staff')
   filter :state
 
@@ -33,8 +47,8 @@ ActiveAdmin.register Task do
       f.input  :number, label: I18n.t('active_admin.number')
       f.input  :contract_number, label: I18n.t('.active_admin.contract_number')
       f.input  :stage, label: I18n.t('active_admin.stage')
-      f.input  :issue_date, lable: I18n.t('active_admin.issue_date')
-      f.input  :completion_date, lable: I18n.t('active_admin.completion_date')
+      f.input  :issue_date, label: I18n.t('active_admin.issue_date')
+      f.input  :completion_date, label: I18n.t('active_admin.completion_date')
       f.input  :issued_department, label: I18n.t('active_admin.issued_department')
       f.input  :received_department, label: I18n.t('active_admin.received_department')
       f.input  :facility, label: I18n.t('active_admin.facility')

@@ -1,4 +1,19 @@
 ActiveAdmin.register Department do
+
+  controller do
+    def create
+      create! do |format|
+        format.html { redirect_to admin_departments_url }
+      end
+    end
+
+    def update
+      update! do |format|
+        format.html { redirect_to admin_departments_url }
+      end
+    end
+  end
+
   menu :label => I18n.t('active_admin.departments')
 
   filter :name, label: I18n.t('active_admin.by_name')

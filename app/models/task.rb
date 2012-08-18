@@ -4,11 +4,13 @@ class Task < ActiveRecord::Base
                   :issued_chief_id, :received_chief_id, :issued_group_head_id, :received_group_head_id,
                   :received_staff_id, :chief_project_engineer_id, :issue_date, :description, :completion_date
 
+  default_scope order: :number
+
   validates :number, presence: true
-  validates :issued_department_id, presence: true
-  validates :received_department_id, presence: true
-  validates :facility_id, presence: true
-  validates :stage_id, presence: true
+  validates :issued_department, presence: true
+  validates :received_department, presence: true
+  validates :facility, presence: true
+  validates :stage, presence: true
   validates :contract_number, presence: true
   validates :issue_date, presence: true
 

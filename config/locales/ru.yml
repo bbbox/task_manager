@@ -1,5 +1,7 @@
 ru:
   active_admin:
+    id: "Номер в базе"
+    status: "Состояние"
     name: "Название"
     by_name: "названию"
     chief: "Начальник"

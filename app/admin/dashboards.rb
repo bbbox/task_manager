@@ -2,7 +2,7 @@ ActiveAdmin::Dashboards.build do
 
   section I18n.t(".active_admin.dashboards.your_tasks_for_this_week") do
     table_for Task.where('received_staff_id = ? and completion_date > ? and "completion_date" < ?', current_user.id, Time.now, 1.week.from_now) do |t|
-      t.column("Status") do  |task|
+      t.column(t('active_admin.status')) do  |task|
        if task.state == "active"
          status_tag "Active", :error
        elsif task.state == "in_progress"
@@ -11,18 +11,16 @@ ActiveAdmin::Dashboards.build do
          status_tag "Done", :ok
        elsif task.state == "paused"
          status_tag "Paused", :error
-
-    #{ |task| status_tag (task.state == "active" ? "Active" : "Paused"), (task.state == "active" ? :ok : :error)}
        end
       end
-      t.column("Number") { |task| link_to task.number, admin_task_path(task) }
-      t.column("Completion Date") { |task| task.completion_date? ? l(task.completion_date, :format => :long) : '-' }
+      t.column(t('active_admin.number')) { |task| link_to task.number, admin_task_path(task) }
+      t.column(t('active_admin.completion_date')) { |task| task.completion_date? ? l(task.completion_date, :format => :long) : '-' }
     end
   end
 
   section I18n.t(".active_admin.dashboards.tasks_are_late") do
     table_for Task.where('received_staff_id = ? and completion_date < ?',current_user.id, Time.now) do |t|
-      t.column("Status") do  |task|
+      t.column(t('active_admin.status')) do  |task|
         if task.state == "active"
           status_tag "Active", :error
         elsif task.state == "in_progress"
@@ -31,12 +29,10 @@ ActiveAdmin::Dashboards.build do
           status_tag "Done", :ok
         elsif task.state == "paused"
           status_tag "Paused", :error
-
-          #{ |task| status_tag (task.state == "active" ? "Active" : "Paused"), (task.state == "active" ? :ok : :error)}
         end
       end
-      t.column("Number") { |task| link_to task.number, admin_task_path(task) }
-      t.column("Completion Date") { |task| task.completion_date? ? l(task.completion_date, :format => :long) : '-' }
+      t.column(t('active_admin.number')) { |task| link_to task.number, admin_task_path(task) }
+      t.column(t('active_admin.completion_date')) { |task| task.completion_date? ? l(task.completion_date, :format => :long) : '-' }
     end
   end
 

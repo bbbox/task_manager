@@ -1,4 +1,18 @@
 ActiveAdmin.register Facility do
+  controller do
+    def create
+      create! do |format|
+        format.html { redirect_to admin_facilities_url }
+      end
+    end
+
+    def update
+      update! do |format|
+        format.html { redirect_to admin_facilities_url }
+      end
+    end
+  end
+
   menu :label => I18n.t('active_admin.facilities')
 
   filter :name, label: I18n.t('active_admin.by_name')
