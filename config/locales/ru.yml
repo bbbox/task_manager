@@ -186,6 +186,10 @@ ru:
       title_content: "Комментарии (%{count})"
       errors:
         empty_text: "Комментарий не сохранен, текст не должен быть пустым."
+    roles:
+      guest: "гость"
+      employee: "пользователь"
+      administrator: "администратор"
   date:
     abbr_day_names:
     - Вс

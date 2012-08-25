@@ -1,4 +1,5 @@
 ActiveAdmin.register Facility do
+  controller.authorize_resource
   controller do
     def create
       create! do |format|

@@ -1,5 +1,5 @@
 ActiveAdmin.register Country do
-
+  controller.authorize_resource
   controller do
     def create
       create! do |format|
@@ -13,7 +13,6 @@ ActiveAdmin.register Country do
       end
     end
   end
-
 
   menu :label => I18n.t('.countries')
 
