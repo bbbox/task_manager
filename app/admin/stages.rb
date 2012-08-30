@@ -13,19 +13,19 @@ ActiveAdmin.register Stage do
     end
   end
 
-  menu :label => I18n.t('active_admin.stages')
+  menu :label => I18n.t('.stages')
 
-  filter :name, label: I18n.t('active_admin.by_name')
+  filter :name, label: I18n.t('active_admin.stages.filter.by_name')
 
   form do |f|
-    f.inputs I18n.t('active_admin.stage') do
-      f.input :name, label: I18n.t('active_admin.name')
+    f.inputs I18n.t('active_admin.stages.form.stage') do
+      f.input :name, label: I18n.t('active_admin.stages.form.name')
     end
     f.buttons
   end
 
   index do
-    column I18n.t('active_admin.name'), :name
+    column I18n.t('active_admin.stages.index.name'), :name
     default_actions
   end
   

@@ -14,23 +14,32 @@ ActiveAdmin.register Plant do
     end
   end
 
-  menu :label => I18n.t('active_admin.plants')
+  menu :label => I18n.t('.plants')
 
-  filter :name, label: I18n.t('active_admin.by_name')
+  filter :name, label: I18n.t('active_admin.plants.by_name')
 
   form do |f|
-    f.inputs I18n.t('active_admin.plant') do
-      f.input :name, label: I18n.t('active_admin.name')
-      f.input :country, label: I18n.t('active_admin.country')
-      f.input  :address, label: I18n.t('active_admin.address')
+    f.inputs I18n.t('active_admin.plants.form.plant') do
+      f.input :name, label: I18n.t('active_admin.plants.form.name')
+      f.input :country, label: I18n.t('active_admin.plants.form.country')
+      f.input  :address, label: I18n.t('active_admin.plants.form.address')
     end
     f.buttons
   end
 
   index do
-    column( I18n.t('active_admin.name'), :name)  { |plant| link_to plant.name, admin_tasks_path }
-    column I18n.t('active_admin.address'), :address
+    column( I18n.t('active_admin.plants.index.name'), :name)  { |plant| link_to plant.name, admin_tasks_path }
+    column I18n.t('active_admin.plants.index.country'), :country
+    column I18n.t('active_admin.plants.index.address'), :address
     default_actions
+  end
+
+  show title: :name do
+    attributes_table do
+      row :name
+      row :address
+      row :country
+    end
   end
 
 end
