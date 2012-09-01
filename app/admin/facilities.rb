@@ -13,25 +13,25 @@ ActiveAdmin.register Facility do
     end
   end
 
-  menu :label => I18n.t('active_admin.facilities')
+  menu :label => I18n.t('.facilities')
 
-  filter :name, label: I18n.t('active_admin.by_name')
-  filter :serial, label: I18n.t('active_admin.by_serial')
-  filter :plant, label: I18n.t('active_admin.by_plant')
+  filter :name, label: I18n.t('active_admin.facilities.filter.by_name')
+  filter :serial, label: I18n.t('active_admin.facilities.filter.by_serial')
+  filter :plant, label: I18n.t('active_admin.facilities.filter.by_plant')
 
   form do |f|
-    f.inputs I18n.t('active_admin.facility') do
-      f.input :name, label: I18n.t('active_admin.name')
-      f.input  :serial, label: I18n.t('active_admin.serial')
-      f.input  :plant, label: I18n.t('active_admin.plant')
+    f.inputs I18n.t('active_admin.facilities.form.facility') do
+      f.input :name, label: I18n.t('active_admin.facilities.form.name')
+      f.input  :serial, label: I18n.t('active_admin.facilities.form.serial')
+      f.input  :plant, label: I18n.t('active_admin.facilities.form.plant')
     end
     f.buttons
   end
 
   index do
-    column I18n.t('active_admin.name'), :name
-    column I18n.t('active_admin.serial'), :serial
-    column I18n.t('active_admin.plant'), :plant
+    column I18n.t('active_admin.facilities.index.name'), :name
+    column I18n.t('active_admin.facilities.index.serial'), :serial
+    column I18n.t('active_admin.facilities.index.plant'), :plant
     default_actions
   end
 

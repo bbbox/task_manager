@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails'
 
 gem 'therubyracer'
 gem 'haml-rails'
@@ -8,7 +8,7 @@ gem 'devise'
 
 gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
 
-gem 'activeadmin'
+gem 'activeadmin', '0.4.4'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'formtastic', '~> 2.1.1'
 
