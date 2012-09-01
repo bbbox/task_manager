@@ -7,7 +7,12 @@ class AdminAbility
     #for guest
     can :read, :all
 
-    #for administrator
+    if user.role?('employee')
+      can :manage, Task do |task|
+        task.received_staff_id == user.id
+      end
+    end
+
     if user.role?('administrator')
       can :manage, :all
     end

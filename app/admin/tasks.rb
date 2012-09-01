@@ -1,6 +1,5 @@
 ActiveAdmin.register Task do
   controller.authorize_resource
-  menu :label => t('.active_admin.tasks')
 
   controller do
     def create

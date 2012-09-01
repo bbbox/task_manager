@@ -14,6 +14,7 @@ ActiveAdmin.register Country do
     end
   end
 
+
   menu :label => I18n.t('.countries')
 
   filter :name, label: I18n.t('active_admin.countries.filter.by_name')
