@@ -1,5 +1,5 @@
 ActiveAdmin.register User do
-
+  controller.authorize_resource
   controller do
     def create
       create! do |format|
@@ -35,6 +35,7 @@ ActiveAdmin.register User do
       f.input :email
       f.input :password, label:  I18n.t('active_admin.users.form.password')
       f.input :password_confirmation,  label: I18n.t('active_admin.users.form.password_confirmation')
+      f.input :role, as: :select, collection: User::ROLES.collect{ |role| [t('active_admin.roles.'+role), role] }, label: I18n.t('active_admin.role')
     end
     f.buttons
   end

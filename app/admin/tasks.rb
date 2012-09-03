@@ -1,4 +1,5 @@
 ActiveAdmin.register Task do
+  controller.authorize_resource
 
   controller do
     def create

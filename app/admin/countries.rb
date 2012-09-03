@@ -1,5 +1,5 @@
 ActiveAdmin.register Country do
-
+  controller.authorize_resource
   controller do
     def create
       create! do |format|
