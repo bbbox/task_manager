@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
   validates :first_name, presence: true
   validates :department, presence: true
   validates :position, presence: true
+  validates :role, presence: true
 
   def email_required?
     false

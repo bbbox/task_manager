@@ -8,7 +8,12 @@ ActiveAdmin.register Task do
       end
     end
 
+    def edit
+      authorize! :manage, Task.find_by_id(params[:id])
+    end
+
     def update
+      authorize! :manage, Task.find_by_id(params[:id])
       update! do |format|
         format.html { redirect_to admin_tasks_url }
       end
