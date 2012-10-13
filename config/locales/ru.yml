@@ -10,21 +10,24 @@ ru:
     dashboard: "Главная"
     dashboards:
       number: "Номер"
-      status: "Состояние"
-      completion_date: "Дата завершения"
-      your_tasks_for_this_week: "Ваши задания на эту неделю"
+      plant: "Завод"
+      facility: "Объект"
+      issue_date: "Дата получения"
+      received_staff: "Исполнитель"
+      active_tasks: "Активные задания"
       tasks_are_late: "Просроченные задания"
     plants:
       by_name: "по имени"
       name: "Название"
       address: "Адрес"
       index:
-        name: "Название"
+        short_name: "Название"
         address: "Адрес"
         country: "Страна"
       form:
         plant: "Завод"
         name: "Название"
+        short_name: "Короткое название"
         address: "Адрес"
         country: "Страна"
     tasks:
@@ -39,7 +42,7 @@ ru:
         by_received_department: "Отдел, получивший задание"
         by_facility: "Объект"
         by_number: "Номеру"
-        by_issue_date: "Дата выдачи"
+        by_issue_date: "Дата получения"
         by_received_staff: "Исполнители"
         by_state: "Состоянию"
       form:
@@ -47,8 +50,8 @@ ru:
         number: "Номер"
         contract_number: "Номер контракта"
         stage: "Стадия"
-        issue_date: "Дата выдачи"
-        completion_date: "Дата завершения"
+        issue_date: "Дата получения"
+        completion_date: "Дата выдачи"
         issued_department: "Отдел, выдавший задание"
         received_department: "Отдел, получивший задание"
         facility: "Объект"
@@ -63,10 +66,11 @@ ru:
         number: "Номер"
         plant: "Завод"
         facility: "Объект"
+        facility_serial: "Серия объекта"
         received_staff: "Исполнитель"
         stage: "Стадия"
         description: "Описание"
-        issue_date: "Дата выдачи"
+        issue_date: "Дата получения"
         state: "Состояние"
     facilities:
       filter:
@@ -118,6 +122,7 @@ ru:
         middle_name: "Отчество"
         department: "Отдел"
         position: "Должность"
+        role: "Роль"
     stages:
       filter:
         by_name: "названию"
