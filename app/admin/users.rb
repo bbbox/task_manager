@@ -47,7 +47,9 @@ ActiveAdmin.register User do
     column I18n.t('active_admin.users.index.middle_name'), :middle_name
     column I18n.t('active_admin.users.index.department'), :department
     column I18n.t('active_admin.users.index.position'), :position
+    column I18n.t('active_admin.users.index.role'), :role
     column :email
+
     default_actions
   end
 
