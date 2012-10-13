@@ -8,12 +8,12 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :login, :first_name, :last_name, :middle_name,
-      :department_id, :position, :role
+      :department_id, :department, :position, :role
 
   default_scope order: :login
 
   has_and_belongs_to_many :tasks
-  belongs_to :department
+  belongs_to :department, inverse_of: :users, inverse_of: :chief
 
   validates :login, presence: true
   validates :login, uniqueness: true, length: { within: 4..36 }
@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
   validates :first_name, presence: true
   validates :department, presence: true
   validates :position, presence: true
+  validates :role, presence: true
 
   def email_required?
     false
