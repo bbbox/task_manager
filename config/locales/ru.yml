@@ -21,12 +21,13 @@ ru:
       name: "Название"
       address: "Адрес"
       index:
-        name: "Название"
+        short_name: "Название"
         address: "Адрес"
         country: "Страна"
       form:
         plant: "Завод"
         name: "Название"
+        short_name: "Короткое название"
         address: "Адрес"
         country: "Страна"
     tasks:

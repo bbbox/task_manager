@@ -23,12 +23,12 @@ namespace :data do
 
   task users: :environment do
     unless User.find_by_email "admin@ua.fm"
-      User.create!(login: "admin", email: "admin@ua.fm", first_name: "first_name_admin", role: "employee",
+      User.create!(login: "admin", email: "admin@ua.fm", first_name: "first_name_admin", role: "administrator",
                    last_name: "last_name_admin", department: Department.first, password: "123456",
                    password_confirmation: "123456", position: "staff")
     end
     unless User.find_by_email "guest@ua.fm"
-      User.create!(login: "guest", email: "guest@ua.fm", first_name: "first_name_guest", role: "employee",
+      User.create!(login: "guest", email: "guest@ua.fm", first_name: "first_name_guest", role: "guest",
                    last_name: "last_name_guest", department: Department.first, password: "123456",
                    password_confirmation: "123456", position: "staff")
     end

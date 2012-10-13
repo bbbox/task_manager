@@ -72,7 +72,7 @@ ActiveAdmin.register Task do
   index do
     column I18n.t('active_admin.tasks.index.number'), :number
     column I18n.t('active_admin.tasks.index.plant') do
-      |task| task.facility.plant.name
+      |task| task.facility.plant.short_name
     end
     column I18n.t('active_admin.tasks.index.facility'), :facility
     column I18n.t('active_admin.tasks.index.facility_serial') do
