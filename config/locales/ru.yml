@@ -449,6 +449,17 @@ ru:
     errors:
       <<: *errors
   activerecord:
+    models:
+      task:
+        one: "Задание"
+        few: "Заданий"
+        many: "Задание"
+        other: "Задания"
+      country:
+        one: "Страна"
+        few: "Стран"
+        many: "Стран"
+        other: "Страны"
     errors:
       <<: *errors
   devise:

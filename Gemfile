@@ -8,7 +8,7 @@ gem 'devise'
 
 gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
 
-gem 'activeadmin', '0.4.4'
+gem 'activeadmin', '~> 0.5.0'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'formtastic', '~> 2.1.1'
 gem 'cancan'
