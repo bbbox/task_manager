@@ -1,10 +1,14 @@
 FactoryGirl.define do
-
+  sequence(:email){ |n| "email#{n}@example.com" }
+  sequence(:login){ |n| "UserName#{n}" }
+  sequence(:position){ |n| "position#{n}" }
   factory :user do
-    login "UserName"
-    email "example@example.com"
-    first_name "first_name"
-    last_name "last_name"
+    login { FactoryGirl.generate(:login) }
+    email { FactoryGirl.generate(:email) }
+    first_name { Faker::Name::first_name }
+    last_name { Faker::Name::last_name }
+    position { FactoryGirl.generate(:position) }
+    role "employee"
     middle_name "middle_name"
     password "password"
   end
