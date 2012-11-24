@@ -14,7 +14,7 @@ ActiveAdmin.register User do
     end
   end
 
-  menu :label => I18n.t('.users')
+  menu label: I18n.t('.users')
 
   filter :login, label: I18n.t('active_admin.users.filter.by_login')
   filter :last_name, label: I18n.t('active_admin.users.filter.by_last_name')
@@ -30,27 +30,49 @@ ActiveAdmin.register User do
       f.input  :last_name, label: I18n.t('active_admin.users.form.last_name')
       f.input :first_name, label: I18n.t('active_admin.users.form.first_name')
       f.input :middle_name, label:  I18n.t('active_admin.users.form.middle_name')
+      f.input :phone_number, label:  I18n.t('active_admin.users.form.phone_number')
       f.input :department, label: I18n.t('active_admin.users.form.department')
       f.input :position, label: I18n.t('active_admin.users.form.position')
       f.input :email
       f.input :password, label:  I18n.t('active_admin.users.form.password')
       f.input :password_confirmation,  label: I18n.t('active_admin.users.form.password_confirmation')
-      f.input :role, as: :select, collection: User::ROLES.collect{ |role| [t('active_admin.roles.'+role), role] }, label: I18n.t('active_admin.role')
+      f.input :role, as: :select, collection: User::ROLES.collect{ |role| [t('active_admin.roles.'+role), role] }, label: I18n.t('active_admin.users.index.role')
     end
     f.buttons
   end
 
   index do
-    column I18n.t('active_admin.users.index.login'), :login
-    column I18n.t('active_admin.users.index.last_name'), :last_name
+    column(I18n.t('active_admin.users.index.last_name'), :last_name)  { |user| link_to user.last_name, admin_user_path(user) }
     column I18n.t('active_admin.users.index.first_name'), :first_name
-    column I18n.t('active_admin.users.index.middle_name'), :middle_name
+    column I18n.t('active_admin.users.index.login'), :login
+    column I18n.t('active_admin.users.form.phone_number'), :phone_number
     column I18n.t('active_admin.users.index.department'), :department
     column I18n.t('active_admin.users.index.position'), :position
-    column I18n.t('active_admin.users.index.role'), :role
     column :email
+    column(I18n.t('active_admin.users.index.role'), :role)
 
-    default_actions
+    column "" do |resource|
+      links = ''.html_safe
+      links += link_to I18n.t('active_admin.edit'), edit_resource_path(resource), :class => "member_link edit_link"
+      links += link_to I18n.t('active_admin.delete'), resource_path(resource), :method => :delete, :confirm => I18n.t('active_admin.delete_confirmation'), :class => "member_link delete_link"
+      links
+    end
+  end
+
+  show title: :login do
+    attributes_table do
+      row :id
+      row :last_name
+      row :first_name
+      row :middle_name
+      row :phone_number
+      row :login
+      row :email
+      row :department
+      row :position
+      row :role
+      row :created_at
+    end
   end
 
 end

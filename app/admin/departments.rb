@@ -1,4 +1,5 @@
 ActiveAdmin.register Department do
+
   controller.authorize_resource
   controller do
     def create
@@ -16,6 +17,7 @@ ActiveAdmin.register Department do
 
   menu :label => I18n.t('.departments')
 
+
   filter :name, label: I18n.t('active_admin.departments.filter.by_name')
   filter :chief, label: I18n.t('active_admin.departments.filter.by_chief')
 
@@ -30,6 +32,11 @@ ActiveAdmin.register Department do
   index do
     column I18n.t('active_admin.departments.index.name'), :name
     column I18n.t('active_admin.departments.index.chief'), :chief
-    default_actions
+    column "" do |resource|
+      links = ''.html_safe
+      links += link_to I18n.t('active_admin.edit'), edit_resource_path(resource), :class => "member_link edit_link"
+      links += link_to I18n.t('active_admin.delete'), resource_path(resource), :method => :delete, :confirm => I18n.t('active_admin.delete_confirmation'), :class => "member_link delete_link"
+      links
+    end
   end
 end
