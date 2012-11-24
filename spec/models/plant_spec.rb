@@ -10,6 +10,6 @@ describe Plant do
 
   it { should have_many :facilities }
 
-  it { should validate_presence_of :name }
+  it { should validate_presence_of :short_name }
 
 end

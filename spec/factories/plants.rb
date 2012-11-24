@@ -1,9 +1,6 @@
 FactoryGirl.define do
-
+	sequence(:plant_name){ |n| "PlantName#{n}" }
   factory :plant do
-    name "Plant name"
-    serial "aaa777"
-    address "dnepropetrovsk"
+    short_name { FactoryGirl.generate(:plant_name) }
   end
-
 end
