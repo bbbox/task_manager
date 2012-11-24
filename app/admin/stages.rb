@@ -1,4 +1,7 @@
 ActiveAdmin.register Stage do
+
+  actions :all, :except => :show
+
   controller.authorize_resource
   controller do
     def create

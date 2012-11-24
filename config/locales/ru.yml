@@ -1,4 +1,16 @@
 ru:
+  activerecord:
+    models:
+      country:
+        one: "Страна"
+        few: "Страны"
+        many: "Стран"
+        other: "Страны"
+      task:
+        one: "таска"
+        few: "таски"
+        many: "таской"
+        other: "таски"
   plants: "Заводы"
   tasks: "Задания"
   facilities: "Объекты"
