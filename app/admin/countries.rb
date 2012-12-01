@@ -1,4 +1,5 @@
 ActiveAdmin.register Country do
+
   controller.authorize_resource
   controller do
     def create
@@ -14,6 +15,7 @@ ActiveAdmin.register Country do
     end
   end
 
+  actions :all, :except => :show
 
   menu :label => I18n.t('.countries')
 

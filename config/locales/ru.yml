@@ -1,4 +1,16 @@
 ru:
+  activerecord:
+    models:
+      country:
+        one: "Страна"
+        few: "Страны"
+        many: "Стран"
+        other: "Страны"
+      task:
+        one: "таска"
+        few: "таски"
+        many: "таской"
+        other: "таски"
   plants: "Заводы"
   tasks: "Задания"
   facilities: "Объекты"
@@ -55,8 +67,8 @@ ru:
         issued_department: "Отдел, выдавший задание"
         received_department: "Отдел, получивший задание"
         facility: "Объект"
-        issued_chief: "Шеф отдела, выдавшего задание"
-        received_chief: "Шеф отдела, получившего задание"
+        issued_chief: "Начальник отдела, выдавшего задание"
+        received_chief: "Начальник отдела, получившего задание"
         issued_group_head: "Начальник группы, выдавшей задание"
         received_group_head: "Начальник группы, получившей задание"
         received_staff: "Исполнители"
@@ -115,6 +127,7 @@ ru:
         position: "Должность"
         password: "Пароль"
         password_confirmation: "Подтверждение пароля"
+        phone_number: "Номер телефона"
       index:
         login: "Логин"
         last_name: "Фамилия"
@@ -123,6 +136,7 @@ ru:
         department: "Отдел"
         position: "Должность"
         role: "Роль"
+        phone_number: "Номер телефона"
     stages:
       filter:
         by_name: "названию"
@@ -452,14 +466,39 @@ ru:
     models:
       task:
         one: "Задание"
-        few: "Заданий"
-        many: "Задание"
+        few: "Задания"
+        many: "Заданий"
         other: "Задания"
       country:
         one: "Страна"
-        few: "Стран"
+        few: "Страны"
         many: "Стран"
         other: "Страны"
+      plant:
+        one: "Завод"
+        few: "Завода"
+        many: "Заводов"
+        other: "Заводы"
+      facility:
+        one: "Объект"
+        few: "Объекта"
+        many: "Объектов"
+        other: "Объекты"
+      department:
+        one: "Отдел"
+        few: "Отдела"
+        many: "Отделов"
+        other: "Отделы"
+      user:
+        one: "Пользователь"
+        few: "Пользователя"
+        many: "Пользователей"
+        other: "Пользователи"
+      stage:
+        one: "Стадия"
+        few: "Стадии"
+        many: "Стадий"
+        other: "Стадии"
     errors:
       <<: *errors
   devise:
