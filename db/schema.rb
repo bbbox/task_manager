@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121013160431) do
+ActiveRecord::Schema.define(:version => 20121201120856) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -55,9 +54,9 @@ ActiveRecord::Schema.define(:version => 20121013160431) do
 
   create_table "departments", :force => true do |t|
     t.string   "name"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "department_head"
   end
 
   create_table "facilities", :force => true do |t|
@@ -96,8 +95,6 @@ ActiveRecord::Schema.define(:version => 20121013160431) do
     t.integer  "stage_id"
     t.string   "step_number"
     t.string   "contract_number"
-    t.integer  "issued_chief_id"
-    t.integer  "received_chief_id"
     t.integer  "issued_group_head_id"
     t.integer  "received_group_head_id"
     t.integer  "received_staff_id"
@@ -108,6 +105,8 @@ ActiveRecord::Schema.define(:version => 20121013160431) do
     t.string   "state"
     t.date     "completion_date"
     t.datetime "actual_completion_date"
+    t.string   "issued_department_head"
+    t.string   "received_department_head"
   end
 
   create_table "tasks_users", :id => false, :force => true do |t|
@@ -137,6 +136,7 @@ ActiveRecord::Schema.define(:version => 20121013160431) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "role"
+    t.string   "phone_number"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

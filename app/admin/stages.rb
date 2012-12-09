@@ -35,5 +35,12 @@ ActiveAdmin.register Stage do
       links
     end
   end
+
+  show title: :name do
+    attributes_table_for stage do
+      row :id
+      row(t('active_admin.stages.show.name')) { stage.name }
+    end
+  end
   
 end

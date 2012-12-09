@@ -60,18 +60,18 @@ ActiveAdmin.register User do
   end
 
   show title: :login do
-    attributes_table do
+    attributes_table_for user do
       row :id
-      row :last_name
-      row :first_name
-      row :middle_name
-      row :phone_number
-      row :login
+      row(t('active_admin.users.show.last_name')) { user.last_name }
+      row(t('active_admin.users.show.first_name')) { user.first_name }
+      row(t('active_admin.users.show.middle_name')) { user.middle_name }
+      row(t('active_admin.users.show.phone_number')) { user.phone_number }
+      row(t('active_admin.users.show.login')) { user.login }
       row :email
-      row :department
-      row :position
-      row :role
-      row :created_at
+      row(t('active_admin.users.show.department')) { user.department }
+      row(t('active_admin.users.show.position')) { user.position }
+      row(t('active_admin.users.show.role')) { user.role }
+      row(t('active_admin.users.show.created_at')) { user.created_at }
     end
   end
 

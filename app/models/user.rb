@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   default_scope order: :login
 
   has_and_belongs_to_many :tasks
-  belongs_to :department, inverse_of: :users, inverse_of: :chief
+  belongs_to :department
 
   validates :login, presence: true
   validates :login, uniqueness: true, length: { within: 4..36 }

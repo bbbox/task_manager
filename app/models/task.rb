@@ -1,7 +1,9 @@
 class Task < ActiveRecord::Base
 
+  after_create :set_departments_head
+
   attr_accessible :number, :issued_department_id, :received_department_id, :facility_id,:stage_id, :contract_number,
-                  :issued_chief_id, :received_chief_id, :issued_group_head_id, :received_group_head_id,
+                  :issued_department_head, :received_department_head, :issued_group_head_id, :received_group_head_id,
                   :received_staff_id, :chief_project_engineer_id, :issue_date, :description, :completion_date
 
   default_scope order: :number
@@ -18,14 +20,21 @@ class Task < ActiveRecord::Base
   belongs_to :issued_department, class_name: "Department"
   belongs_to :received_department,class_name: "Department"
   belongs_to :facility
-  belongs_to :issued_chief, class_name: "User"
-  belongs_to :received_chief, class_name: "User"
   belongs_to :issued_group_head, class_name: "User"
   belongs_to :received_group_head, class_name: "User"
   belongs_to :received_staff, class_name: "User"
   belongs_to :chief_project_engineer, class_name: "User"
   belongs_to :stage
   has_many  :expiration
+
+  private
+
+    def set_departments_head
+      self.update_attributes!( issued_department_head:  self.issued_department.department_head, received_department_head: self.received_department.department_head )
+      puts "set"
+    end
+
+
 
   #неназначенное, в работе, выполненное, приостановленное
 =begin

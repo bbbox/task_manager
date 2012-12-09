@@ -41,12 +41,12 @@ ActiveAdmin.register Plant do
   end
 
   show title: :name do
-    attributes_table do
-      row :name
-      row :short_name
-      row :address
-      row :country
-    end
+    attributes_table_for plant do
+      row(t('active_admin.plants.show.name')) { plant.name } 
+      row(t('active_admin.plants.show.short_name')) { plant.short_name }
+      row(t('active_admin.plants.show.address')) { plant.address}
+      row(t('active_admin.plants.show.country')) { plant.country }
+   end
   end
 
 end
