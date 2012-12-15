@@ -1,4 +1,7 @@
 ru:
+  formtastic:
+    create: 'Создать'
+    update: 'Редактировать'
   activerecord:
   plants: "Заводы"
   tasks: "Задания"

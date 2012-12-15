@@ -4,7 +4,7 @@ ActiveAdmin.register Task do
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_tasks_url }
+        format.html { redirect_to tasks_url }
       end
     end
 
@@ -15,7 +15,7 @@ ActiveAdmin.register Task do
     def update
       authorize! :manage, Task.find_by_id(params[:id])
       update! do |format|
-        format.html { redirect_to admin_tasks_url }
+        format.html { redirect_to tasks_url }
       end
     end
   end
@@ -68,7 +68,7 @@ ActiveAdmin.register Task do
   end
 
   index do
-    column(I18n.t('active_admin.tasks.index.number'), :number)  { |task| link_to task.number, admin_task_path(task) }
+    column(I18n.t('active_admin.tasks.index.number'), :number)  { |task| link_to task.number, task_path(task) }
     column I18n.t('active_admin.tasks.index.plant') do
       |task| task.facility.plant.short_name
     end

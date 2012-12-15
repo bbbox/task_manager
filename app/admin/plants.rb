@@ -3,13 +3,13 @@ ActiveAdmin.register Plant do
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_plants_url }
+        format.html { redirect_to plants_url }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_plants_url }
+        format.html { redirect_to plants_url }
       end
     end
   end
@@ -29,7 +29,7 @@ ActiveAdmin.register Plant do
   end
 
   index do
-    column( I18n.t('active_admin.plants.index.short_name'), :short_name)  { |plant| link_to plant.short_name, admin_plant_path(plant) }
+    column( I18n.t('active_admin.plants.index.short_name'), :short_name)  { |plant| link_to plant.short_name, plant_path(plant) }
     column I18n.t('active_admin.plants.index.country'), :country
     column I18n.t('active_admin.plants.index.address'), :address
     column "" do |resource|

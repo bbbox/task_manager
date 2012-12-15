@@ -3,13 +3,13 @@ ActiveAdmin.register User do
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_users_url }
+        format.html { redirect_to users_url }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_users_url }
+        format.html { redirect_to users_url }
       end
     end
   end
@@ -42,7 +42,7 @@ ActiveAdmin.register User do
   end
 
   index do
-    column(I18n.t('active_admin.users.index.last_name'), :last_name)  { |user| link_to user.last_name, admin_user_path(user) }
+    column(I18n.t('active_admin.users.index.last_name'), :last_name)  { |user| link_to user.last_name, user_path(user) }
     column I18n.t('active_admin.users.index.first_name'), :first_name
     column I18n.t('active_admin.users.index.login'), :login
     column I18n.t('active_admin.users.form.phone_number'), :phone_number

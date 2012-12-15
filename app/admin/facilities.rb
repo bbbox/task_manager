@@ -3,13 +3,13 @@ ActiveAdmin.register Facility do
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_facilities_url }
+        format.html { redirect_to facilities_url }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_facilities_url }
+        format.html { redirect_to facilities_url }
       end
     end
   end
