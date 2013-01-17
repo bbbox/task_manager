@@ -1,4 +1,4 @@
-ActiveAdmin.register Facility do
+ActiveAdmin.register Facility, :namespace => false do
   controller.authorize_resource
   controller do
     def create

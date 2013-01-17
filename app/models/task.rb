@@ -31,7 +31,6 @@ class Task < ActiveRecord::Base
 
     def set_departments_head
       self.update_attributes!( issued_department_head:  self.issued_department.department_head, received_department_head: self.received_department.department_head )
-      puts "set"
     end
 
 

@@ -1,4 +1,4 @@
-ActiveAdmin.register Country do
+ActiveAdmin.register Country, :namespace => false do
 
   controller.authorize_resource
   controller do

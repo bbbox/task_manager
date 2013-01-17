@@ -1,4 +1,4 @@
-ActiveAdmin.register User do
+ActiveAdmin.register User, :namespace => false do
   controller.authorize_resource
   controller do
     def create

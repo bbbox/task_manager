@@ -1,4 +1,4 @@
-ActiveAdmin.register Department do
+ActiveAdmin.register Department, :namespace => false do
 
   controller.authorize_resource
   controller do
@@ -41,10 +41,10 @@ ActiveAdmin.register Department do
   end
 
   show title: :name do
-    attributes_table_for department do
+    attributes_table do
       row :id
       row(t('active_admin.departments.show.name')) { department.name }
-      row(t('active_admin.departments.show.chief')) { department.department_head}
+      row(t('active_admin.departments.show.chief')) { department.department_head }
     end
   end
 end

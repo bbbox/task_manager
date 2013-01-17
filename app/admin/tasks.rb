@@ -1,4 +1,4 @@
-ActiveAdmin.register Task do
+ActiveAdmin.register Task, :namespace => false do
   controller.authorize_resource
 
   controller do

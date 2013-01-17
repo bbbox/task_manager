@@ -1,4 +1,4 @@
-ActiveAdmin.register Plant do
+ActiveAdmin.register Plant, :namespace => false do
   controller.authorize_resource
   controller do
     def create

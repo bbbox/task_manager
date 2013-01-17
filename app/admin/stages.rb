@@ -1,4 +1,4 @@
-ActiveAdmin.register Stage do
+ActiveAdmin.register Stage, :namespace => false do
 
   controller.authorize_resource
   controller do
