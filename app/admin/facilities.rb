@@ -1,15 +1,15 @@
-ActiveAdmin.register Facility do
+ActiveAdmin.register Facility, :namespace => false do
   controller.authorize_resource
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_facilities_url }
+        format.html { redirect_to facilities_url }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_facilities_url }
+        format.html { redirect_to facilities_url }
       end
     end
   end
@@ -42,11 +42,11 @@ ActiveAdmin.register Facility do
   end
 
   show title: :name do
-    attributes_table do
+    attributes_table_for facility do
       row :id
-      row :name
-      row :serial
-      row :plant
+      row(t('active_admin.facilities.show.name')) { facility.name }
+      row(t('active_admin.facilities.show.serial')) { facility.serial }
+      row(t('active_admin.facilities.show.plant')) { facility.plant.name }
     end
   end
   

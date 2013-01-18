@@ -1,15 +1,15 @@
-ActiveAdmin.register Plant do
+ActiveAdmin.register Plant, :namespace => false do
   controller.authorize_resource
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_plants_url }
+        format.html { redirect_to plants_url }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_plants_url }
+        format.html { redirect_to plants_url }
       end
     end
   end
@@ -29,7 +29,7 @@ ActiveAdmin.register Plant do
   end
 
   index do
-    column( I18n.t('active_admin.plants.index.short_name'), :short_name)  { |plant| link_to plant.short_name, admin_plant_path(plant) }
+    column( I18n.t('active_admin.plants.index.short_name'), :short_name)  { |plant| link_to plant.short_name, plant_path(plant) }
     column I18n.t('active_admin.plants.index.country'), :country
     column I18n.t('active_admin.plants.index.address'), :address
     column "" do |resource|
@@ -41,12 +41,12 @@ ActiveAdmin.register Plant do
   end
 
   show title: :name do
-    attributes_table do
-      row :name
-      row :short_name
-      row :address
-      row :country
-    end
+    attributes_table_for plant do
+      row(t('active_admin.plants.show.name')) { plant.name } 
+      row(t('active_admin.plants.show.short_name')) { plant.short_name }
+      row(t('active_admin.plants.show.address')) { plant.address}
+      row(t('active_admin.plants.show.country')) { plant.country }
+   end
   end
 
 end

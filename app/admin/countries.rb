@@ -1,16 +1,16 @@
-ActiveAdmin.register Country do
+ActiveAdmin.register Country, :namespace => false do
 
   controller.authorize_resource
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_countries_url }
+        format.html { redirect_to countries_url }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_countries_url }
+        format.html { redirect_to countries_url }
       end
     end
   end

@@ -1,16 +1,8 @@
 ru:
+  formtastic:
+    create: 'Создать'
+    update: 'Редактировать'
   activerecord:
-    models:
-      country:
-        one: "Страна"
-        few: "Страны"
-        many: "Стран"
-        other: "Страны"
-      task:
-        one: "таска"
-        few: "таски"
-        many: "таской"
-        other: "таски"
   plants: "Заводы"
   tasks: "Задания"
   facilities: "Объекты"
@@ -42,6 +34,11 @@ ru:
         short_name: "Короткое название"
         address: "Адрес"
         country: "Страна"
+      show:
+        name: "Название"
+        short_name: "Короткое название"
+        address: "Адрес"
+        country: "Страна"  
     tasks:
       scope:
         all: "Все"
@@ -69,8 +66,8 @@ ru:
         facility: "Объект"
         issued_chief: "Начальник отдела, выдавшего задание"
         received_chief: "Начальник отдела, получившего задание"
-        issued_group_head: "Начальник группы, выдавшей задание"
-        received_group_head: "Начальник группы, получившей задание"
+        issued_group_head: "Зав. группы, выдавшей задание"
+        received_group_head: "Зав. группы, получившей задание"
         received_staff: "Исполнители"
         chief_project_engineer: "ГИП"
         description: "Описание"
@@ -84,6 +81,25 @@ ru:
         description: "Описание"
         issue_date: "Дата получения"
         state: "Состояние"
+      show:
+        number: "Номер"
+        contract_number: "Номер контракта"
+        stage: "Стадия"
+        issue_date: "Дата получения"
+        completion_date: "Дата выдачи"
+        issued_department: "Отдел, выдавший задание"
+        received_department: "Отдел, получивший задание"
+        facility: "Объект"
+        issued_chief: "Начальник отдела, выдавшего задание"
+        received_chief: "Начальник отдела, получившего задание"
+        issued_group_head: "Зав. группы, выдавшей задание"
+        received_group_head: "Зав. группы, получившей задание"
+        received_staff: "Исполнители"
+        chief_project_engineer: "ГИП"
+        description: "Описание"
+        issued_department_head: "Начальник отдела, получившего задания"
+        received_department_head: "Начальник отдела, выдавшего задания"
+        actual_completion_date: "Дата выполнения"
     facilities:
       filter:
         by_name: "имени"
@@ -98,6 +114,10 @@ ru:
         name: "Название"
         serial: "Серия"
         plant: "Завод"
+      show:
+        name: "Название"
+        serial: "Серия"
+        plant: "Завод"
     departments:
       filter:
         by_name: "название"
@@ -107,6 +127,9 @@ ru:
         name: "Название"
         chief: "Начальник"
       index:
+        name: "Название"
+        chief: "Начальник"
+      show:
         name: "Название"
         chief: "Начальник"
     users:
@@ -137,6 +160,16 @@ ru:
         position: "Должность"
         role: "Роль"
         phone_number: "Номер телефона"
+      show:
+        login: "Логин"
+        last_name: "Фамилия"
+        first_name: "Имя"
+        middle_name: "Отчество"
+        department: "Отдел"
+        position: "Должность"
+        role: "Роль"
+        phone_number: "Номер телефона"
+        created_at: "Дата создания"
     stages:
       filter:
         by_name: "названию"
@@ -145,6 +178,8 @@ ru:
         name: "Название"
       index:
         name: "Название"
+      show:
+        name: "Название" 
     countries:
       filter:
         by_name: "названию"
@@ -154,7 +189,7 @@ ru:
       index:
         name: "Название"
     dashboard_welcome:
-      welcome: "Добро пожаловать в Active Admin. Это стандартная страница управления сайтом."
+      welcome: "Добро пожаловать в Task Manager. Это стандартная страница управления сайтом."
       call_to_action: "Чтобы добавить сюда что-нибудь загляните в 'app/admin/dashboards.rb'"
     view: "Открыть"
     edit: "Изменить"

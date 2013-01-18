@@ -1,10 +1,10 @@
-ActiveAdmin.register Task do
+ActiveAdmin.register Task, :namespace => false do
   controller.authorize_resource
 
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_tasks_url }
+        format.html { redirect_to tasks_url }
       end
     end
 
@@ -15,7 +15,7 @@ ActiveAdmin.register Task do
     def update
       authorize! :manage, Task.find_by_id(params[:id])
       update! do |format|
-        format.html { redirect_to admin_tasks_url }
+        format.html { redirect_to tasks_url }
       end
     end
   end
@@ -58,8 +58,6 @@ ActiveAdmin.register Task do
       f.input  :issued_department, label: I18n.t('active_admin.tasks.form.issued_department')
       f.input  :received_department, label: I18n.t('active_admin.tasks.form.received_department')
       f.input  :facility, label: I18n.t('active_admin.tasks.form.facility')
-      f.input  :issued_chief, label: I18n.t('active_admin.tasks.form.issued_chief')
-      f.input  :received_chief, label: I18n.t('active_admin.tasks.form.received_chief')
       f.input  :issued_group_head, label: I18n.t('active_admin.tasks.form.issued_group_head')
       f.input  :received_group_head, label: I18n.t('active_admin.tasks.form.received_group_head')
       f.input  :received_staff, label: I18n.t('active_admin.tasks.form.received_staff')
@@ -70,7 +68,7 @@ ActiveAdmin.register Task do
   end
 
   index do
-    column(I18n.t('active_admin.tasks.index.number'), :number)  { |task| link_to task.number, admin_task_path(task) }
+    column(I18n.t('active_admin.tasks.index.number'), :number)  { |task| link_to task.number, task_path(task) }
     column I18n.t('active_admin.tasks.index.plant') do
       |task| task.facility.plant.short_name
     end
@@ -89,6 +87,28 @@ ActiveAdmin.register Task do
       links += link_to I18n.t('active_admin.edit'), edit_resource_path(resource), :class => "member_link edit_link"
       links += link_to I18n.t('active_admin.delete'), resource_path(resource), :method => :delete, :confirm => I18n.t('active_admin.delete_confirmation'), :class => "member_link delete_link"
       links
+    end
+  end
+
+  show title: :number do
+    attributes_table_for task do
+      row :id
+      row(t('active_admin.tasks.show.number')) { task.number }
+      row(t('active_admin.tasks.show.contract_number')) { task.contract_number}
+      row(t('active_admin.tasks.show.description')) { task.description }
+      row(t('active_admin.tasks.show.stage')) { task.stage }
+      row(t('active_admin.tasks.show.issue_date')) { task.issue_date }
+      row(t('active_admin.tasks.show.completion_date')) { task.completion_date }
+      row(t('active_admin.tasks.show.actual_completion_date')) { task.actual_completion_date }
+      row(t('active_admin.tasks.show.issued_department')) { task.issued_department }
+      row(t('active_admin.tasks.show.received_department')) { task.received_department }
+      row(t('active_admin.tasks.show.facility')) { task.facility }
+      row(t('active_admin.tasks.show.issued_group_head')) { task.issued_group_head }
+      row(t('active_admin.tasks.show.received_group_head')) { task.received_group_head }
+      row(t('active_admin.tasks.show.issued_group_head')) { task.issued_group_head }
+      row(t('active_admin.tasks.show.issued_department_head')) { task.issued_department_head }
+      row(t('active_admin.tasks.show.received_department_head')) { task.received_department_head  }
+      row(t('active_admin.tasks.show.chief_project_engineer')) {task.chief_project_engineer}
     end
   end
 

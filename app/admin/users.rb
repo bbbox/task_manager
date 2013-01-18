@@ -1,15 +1,15 @@
-ActiveAdmin.register User do
+ActiveAdmin.register User, :namespace => false do
   controller.authorize_resource
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_users_url }
+        format.html { redirect_to users_url }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_users_url }
+        format.html { redirect_to users_url }
       end
     end
   end
@@ -42,7 +42,7 @@ ActiveAdmin.register User do
   end
 
   index do
-    column(I18n.t('active_admin.users.index.last_name'), :last_name)  { |user| link_to user.last_name, admin_user_path(user) }
+    column(I18n.t('active_admin.users.index.last_name'), :last_name)  { |user| link_to user.last_name, user_path(user) }
     column I18n.t('active_admin.users.index.first_name'), :first_name
     column I18n.t('active_admin.users.index.login'), :login
     column I18n.t('active_admin.users.form.phone_number'), :phone_number
@@ -60,18 +60,18 @@ ActiveAdmin.register User do
   end
 
   show title: :login do
-    attributes_table do
+    attributes_table_for user do
       row :id
-      row :last_name
-      row :first_name
-      row :middle_name
-      row :phone_number
-      row :login
+      row(t('active_admin.users.show.last_name')) { user.last_name }
+      row(t('active_admin.users.show.first_name')) { user.first_name }
+      row(t('active_admin.users.show.middle_name')) { user.middle_name }
+      row(t('active_admin.users.show.phone_number')) { user.phone_number }
+      row(t('active_admin.users.show.login')) { user.login }
       row :email
-      row :department
-      row :position
-      row :role
-      row :created_at
+      row(t('active_admin.users.show.department')) { user.department }
+      row(t('active_admin.users.show.position')) { user.position }
+      row(t('active_admin.users.show.role')) { user.role }
+      row(t('active_admin.users.show.created_at')) { user.created_at }
     end
   end
 
