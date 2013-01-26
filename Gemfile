@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails'
+gem 'rails', '3.2.11'
 
 gem 'therubyracer'
 gem 'haml-rails'
 gem 'devise'
 
-gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
+gem "twitter-bootstrap-rails"
 
-gem 'activeadmin', '~> 0.5.0'
+gem 'activeadmin', '~> 0.5.1'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'formtastic', '~> 2.1.1'
 gem 'cancan'
