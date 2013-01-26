@@ -6,11 +6,9 @@ describe Department do
       FactoryGirl.create(:department)
     }.should change{Department.count}.by(1)
   end
-
   it { should have_many :users }
-  it { should belong_to :chief }
-
 
   it { should validate_presence_of :name }
+  it { should validate_presence_of :department_head }
 
 end
