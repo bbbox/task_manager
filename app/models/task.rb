@@ -25,7 +25,6 @@ class Task < ActiveRecord::Base
   belongs_to :received_staff, class_name: "User"
   belongs_to :chief_project_engineer, class_name: "User"
   belongs_to :stage
-  has_many  :expiration
 
   private
 

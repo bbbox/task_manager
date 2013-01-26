@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 namespace :data do
   desc "Generate some test data"
   task generate: :environment do
