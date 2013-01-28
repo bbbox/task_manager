@@ -4,13 +4,13 @@ ActiveAdmin.register Stage, :namespace => false do
   controller do
     def create
       create! do |format|
-        format.html { redirect_to admin_stages_url }
+        format.html { redirect_to stages_url }
       end
     end
 
     def update
       update! do |format|
-        format.html { redirect_to admin_stages_url }
+        format.html { redirect_to stages_url }
       end
     end
   end
