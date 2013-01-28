@@ -11,9 +11,9 @@ namespace :data do
     ["first_department", "second_department", "third_department"].each do |name|
       unless Department.find_by_name name
         department = Department.new(name: name)
-        department.chief = User.create!(login: "chief_of_#{name}", email: "chief_#{name}@ua.fm", role: "employee",
+        department.department_head = User.create!(login: "chief_of_#{name}", email: "chief_#{name}@ua.fm", role: "employee",
                                         first_name: "first_name_chief_of_#{name}", last_name: "last_name_chief_of#{name}",
-                                        password: "123456", password_confirmation: "123456", department: department, position: "staff")
+                                        password: "123456", password_confirmation: "123456", department: department, position: "staff").first_name
         department.save!
       end
     end
@@ -45,7 +45,7 @@ namespace :data do
   task facility: :environment do
     ["first_plant", "second_plant", "third_plant"].each do |name|
       unless Plant.find_by_name name
-        plant = Plant.create!(name: name)
+        plant = Plant.create!(name: name, short_name: name)
         plant.facilities.create!(name: "facility_of_#{name}")
       end
     end
