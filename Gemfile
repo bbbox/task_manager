@@ -6,12 +6,14 @@ gem 'therubyracer'
 gem 'haml-rails'
 gem 'devise'
 
-gem "twitter-bootstrap-rails"
+gem 'twitter-bootstrap-rails'
 
 gem 'activeadmin', '~> 0.5.1'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'formtastic', '~> 2.1.1'
 gem 'cancan'
+
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
