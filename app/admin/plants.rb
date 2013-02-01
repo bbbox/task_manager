@@ -1,4 +1,5 @@
 ActiveAdmin.register Plant, :namespace => false do
+  config.sort_order = "name_asc"
   controller.authorize_resource
   controller do
     def create
