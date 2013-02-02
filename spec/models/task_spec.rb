@@ -28,7 +28,6 @@ describe Task do
   end
 
   it { should validate_presence_of :number }
-  it { should validate_presence_of :contract_number }
   it { should validate_presence_of :issue_date }
 
   it { should have_and_belong_to_many :executors }
