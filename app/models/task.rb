@@ -13,7 +13,6 @@ class Task < ActiveRecord::Base
   validates :received_department, presence: true
   validates :facility, presence: true
   validates :stage, presence: true
-  validates :issue_date, presence: true
 
   has_and_belongs_to_many :executors, class_name: "User", foreign_key: :user_id
   belongs_to :issued_department, class_name: "Department"

@@ -10,6 +10,9 @@ ru:
   users: "Пользователи"
   stages: "Стадии"
   countries: "Страны"
+  positions:
+    group_head: "Зав. группы"
+    chief_project_engineer: "ГИП"
   active_admin:
     dashboard: "Главная"
     dashboards:
