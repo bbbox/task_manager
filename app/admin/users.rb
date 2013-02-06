@@ -70,7 +70,7 @@ ActiveAdmin.register User, :namespace => false do
       row :email
       row(t('active_admin.users.show.department')) { user.department }
       row(t('active_admin.users.show.position')) { user.position }
-      row(t('active_admin.users.show.role')) { user.role }
+      row(t('active_admin.users.show.role')) { t('active_admin.roles.'+user.role) }
       row(t('active_admin.users.show.created_at')) { user.created_at }
     end
   end

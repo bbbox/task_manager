@@ -22,6 +22,9 @@ class User < ActiveRecord::Base
   validates :position, presence: true
   validates :role, presence: true
 
+  scope :cpe, where("position = ?", I18n.t('positions.chief_project_engineer')) # chief project engineers
+  scope :gh,  where("position = ?", I18n.t('positions.group_head')) # group head
+
   def email_required?
     false
   end

@@ -58,10 +58,10 @@ ActiveAdmin.register Task, :namespace => false do
       f.input  :issued_department, label: I18n.t('active_admin.tasks.form.issued_department')
       f.input  :received_department, label: I18n.t('active_admin.tasks.form.received_department')
       f.input  :facility, label: I18n.t('active_admin.tasks.form.facility')
-      f.input  :issued_group_head, label: I18n.t('active_admin.tasks.form.issued_group_head')
-      f.input  :received_group_head, label: I18n.t('active_admin.tasks.form.received_group_head')
+      f.input  :issued_group_head, as: :select, collection: User.gh.collect{ |user| [user.last_name, user.id] }, label: I18n.t('active_admin.tasks.form.issued_group_head')
+      f.input  :received_group_head, as: :select, collection: User.gh.collect{ |user| [user.last_name, user.id] }, label: I18n.t('active_admin.tasks.form.received_group_head')
       f.input  :received_staff, label: I18n.t('active_admin.tasks.form.received_staff')
-      f.input  :chief_project_engineer, label: I18n.t('active_admin.tasks.form.chief_project_engineer')
+      f.input  :chief_project_engineer, as: :select, collection: User.cpe.collect{ |user| [user.last_name, user.id] }, label: I18n.t('active_admin.tasks.form.chief_project_engineer')
       f.input  :description, label: I18n.t('active_admin.tasks.form.description')
     end
     f.buttons
