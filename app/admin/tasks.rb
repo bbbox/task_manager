@@ -57,7 +57,7 @@ ActiveAdmin.register Task, :namespace => false do
       f.input  :completion_date, label: I18n.t('active_admin.tasks.form.completion_date')
       f.input  :issued_department, label: I18n.t('active_admin.tasks.form.issued_department')
       f.input  :received_department, label: I18n.t('active_admin.tasks.form.received_department')
-      f.input  :facility, label: I18n.t('active_admin.tasks.form.facility')
+      f.input  :facility, label: I18n.t('active_admin.tasks.form.facility')      
       f.input  :issued_group_head, as: :select, collection: User.gh.collect{ |user| [user.last_name, user.id] }, label: I18n.t('active_admin.tasks.form.issued_group_head')
       f.input  :received_group_head, as: :select, collection: User.gh.collect{ |user| [user.last_name, user.id] }, label: I18n.t('active_admin.tasks.form.received_group_head')
       f.input  :received_staff, label: I18n.t('active_admin.tasks.form.received_staff')
@@ -76,7 +76,7 @@ ActiveAdmin.register Task, :namespace => false do
     column I18n.t('active_admin.tasks.index.facility_serial') do
       |task| task.facility.serial
     end
-    column I18n.t('active_admin.tasks.index.received_staff'), :received_staff
+    column(I18n.t('active_admin.tasks.index.received_staff'), :received_staff) { |task| task.received_staff.last_name if task.received_staff }
     column I18n.t('active_admin.tasks.index.stage'), :stage
     column I18n.t('active_admin.tasks.index.description'), :description
     column I18n.t('active_admin.tasks.index.issue_date'), :issue_date
@@ -105,7 +105,6 @@ ActiveAdmin.register Task, :namespace => false do
       row(t('active_admin.tasks.show.facility')) { task.facility }
       row(t('active_admin.tasks.show.issued_group_head')) { task.issued_group_head }
       row(t('active_admin.tasks.show.received_group_head')) { task.received_group_head }
-      row(t('active_admin.tasks.show.issued_group_head')) { task.issued_group_head }
       row(t('active_admin.tasks.show.issued_department_head')) { task.issued_department_head }
       row(t('active_admin.tasks.show.received_department_head')) { task.received_department_head  }
       row(t('active_admin.tasks.show.chief_project_engineer')) {task.chief_project_engineer}

@@ -42,7 +42,7 @@ ActiveAdmin.register User, :namespace => false do
   end
 
   index do
-    column(I18n.t('active_admin.users.index.last_name'), :last_name)  { |user| link_to user.last_name, user_path(user) }
+    column(I18n.t('active_admin.users.index.last_name'), :last_name , sortable: :last_name)  { |user| link_to user.last_name, user_path(user) }
     column I18n.t('active_admin.users.index.first_name'), :first_name
     column I18n.t('active_admin.users.index.login'), :login
     column I18n.t('active_admin.users.form.phone_number'), :phone_number
