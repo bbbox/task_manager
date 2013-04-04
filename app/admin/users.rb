@@ -12,6 +12,22 @@ ActiveAdmin.register User, :namespace => false do
         format.html { redirect_to users_url }
       end
     end
+
+    def edit
+      authorize! :edit, User.find_by_id(params[:id])
+    end
+
+    def update
+      user = User.find_by_id(params[:id])
+      authorize! :update, user
+      if params[:user][:password].blank? && params[:user][:password_confirmation].blank?
+        params[:user].delete(:password)
+        params[:user].delete(:password_confirmation)
+      end
+      update! do |format|
+        format.html { redirect_to user_url(user) }
+      end
+    end
   end
 
   menu label: I18n.t('.users')
