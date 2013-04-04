@@ -11,6 +11,8 @@ class Ability
       can :manage, Task do |task|
         task.received_staff_id == user.id
       end
+
+      can [:update, :edit], User, id: user.id
     end
 
     if user.role?('administrator')
